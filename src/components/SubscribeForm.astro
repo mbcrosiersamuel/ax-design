@@ -1,0 +1,173 @@
+---
+// Subscribe form with validation
+---
+
+<form class="subscribe-form" id="subscribe-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="subscribe" />
+  <p class="visually-hidden">
+    <label>
+      Don't fill this out if you're human: <input name="bot-field" />
+    </label>
+  </p>
+
+  <div class="form-group">
+    <label for="name" class="form-label">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      class="form-input"
+      required
+      autocomplete="name"
+      placeholder="Your name"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="form-input"
+      required
+      autocomplete="email"
+      placeholder="your@email.com"
+    />
+  </div>
+
+  <p class="form-help">
+    We'll send you a confirmation email. No spam, unsubscribe anytime.
+  </p>
+
+  <button type="submit" class="form-submit">
+    Subscribe
+  </button>
+
+  <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+</form>
+
+<style>
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .form-label {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  .form-input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--text-base);
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+  }
+
+  .form-input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .form-help {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: var(--line-relaxed);
+  }
+
+  .form-submit {
+    width: 100%;
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-bg);
+    background: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+
+  .form-submit:hover {
+    background: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+  }
+
+  .form-submit:active {
+    transform: translateY(1px);
+  }
+
+  .form-message {
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    text-align: center;
+    display: none;
+  }
+
+  .form-message.success {
+    display: block;
+    background: var(--color-good-bg);
+    color: var(--color-good);
+  }
+
+  .form-message.error {
+    display: block;
+    background: var(--color-bad-bg);
+    color: var(--color-bad);
+  }
+</style>
+
+<script is:inline>
+  // Form handling
+  window.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('subscribe-form');
+    const message = document.getElementById('form-message');
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString(),
+          });
+
+          if (response.ok) {
+            message.textContent = 'Thanks! Check your email to confirm your subscription.';
+            message.className = 'form-message success';
+            form.reset();
+          } else {
+            throw new Error('Form submission failed');
+          }
+        } catch (error) {
+          message.textContent = 'Oops! Something went wrong. Please try again.';
+          message.className = 'form-message error';
+        }
+      });
+    }
+  });
+</script>

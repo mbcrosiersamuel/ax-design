@@ -1,0 +1,121 @@
+---
+import Header from '@components/Header.astro';
+import '@styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title,
+  description = 'Agent Experience design patterns and best practices for the agentic web.',
+  image = '/og-image.jpg'
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.site)} />
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="AX Design RSS Feed" href="/feed.xml" />
+    <link rel="alternate" type="application/json" title="AX Design JSON Feed" href="/feed.json" />
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  </head>
+  <body>
+    <Header />
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">
+          &copy; {new Date().getFullYear()} <strong>agentexperience.design</strong>
+        </p>
+        <nav class="footer__links">
+          <a href="/feed.xml" class="footer__link">RSS</a>
+          <a href="/feed.json" class="footer__link">JSON Feed</a>
+          <a href="/llms.txt" class="footer__link">llms.txt</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  main {
+    min-height: calc(100vh - var(--header-height) - 200px);
+  }
+
+  .footer {
+    margin-top: var(--space-24);
+    padding: var(--space-12) 0;
+    border-top: 1px solid var(--color-border);
+    background: var(--color-bg-subtle);
+  }
+
+  .footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+  }
+
+  .footer__text {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .footer__links {
+    display: flex;
+    gap: var(--space-6);
+  }
+
+  .footer__link {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    transition: color var(--transition-fast);
+  }
+
+  .footer__link:hover {
+    color: var(--color-text);
+  }
+
+  @media (max-width: 768px) {
+    .footer__inner {
+      flex-direction: column;
+      text-align: center;
+      gap: var(--space-4);
+    }
+  }
+</style>

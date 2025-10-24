@@ -1,0 +1,189 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Button from '@components/Button.astro';
+---
+
+<BaseLayout
+  title="About | agentexperience.design"
+  description="Learn about Agent Experience design and the mission of agentexperience.design"
+>
+  <article class="about">
+    <div class="container">
+      <div class="about__content">
+        <div class="about__header">
+          <h1 class="about__title">About Agent Experience Design</h1>
+          <Button variant="ghost" size="sm" class="copy-markdown-btn" data-copy-about-markdown>
+            📋 Copy as Markdown
+          </Button>
+        </div>
+
+        <div class="about__body">
+          <p>
+            Hi, and welcome to <strong>agentexperience.design</strong>, a curated collection of Agent Experience (AX) design examples.
+          </p>
+
+          <p>
+            This site was inspired by the emerging field of Agent Experience (AX), pioneered by leaders like <a href="https://biilmann.blog/articles/introducing-ax/">Mathias Biilmann</a>, CEO of Netlify.
+          </p>
+          <p>
+            If the future is agentic, and agents browse, shop, and book on our behalf, then our web experiences must be attractive and usable for agents as well as for humans.
+          </p>
+          <p>
+            This site highlights examples of great AX practices, and anti-patterns, so we can learn together. We've also tried to incorporate (some, but not all) AX best practices here. Every page offers a Copy as Markdown option and is documented in <code>/llms.txt</code> for agent consumption.
+          </p>
+
+          <p>
+            If you want updates when we publish new examples, please subscribe below. To suggest an example, please email us at <a href="mailto:hello@agentexperience.design">hello@agentexperience.design</a>.
+          </p>
+
+          <div class="about__cta">
+            <Button variant="primary" size="lg" href="/#subscribe">
+              Subscribe to Updates
+            </Button>
+            <Button variant="secondary" size="lg" href="/gallery">
+              Browse Examples
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .about {
+    padding: var(--space-16) 0;
+  }
+
+  .about__content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  .about__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-bottom: var(--space-8);
+    flex-wrap: wrap;
+  }
+
+  .about__title {
+    font-size: var(--text-5xl);
+    margin: 0;
+  }
+
+  .about__header :global(.copy-markdown-btn) {
+    flex-shrink: 0;
+  }
+
+  .about__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .about__body p {
+    font-size: var(--text-lg);
+    color: var(--color-text);
+  }
+
+  .about__body h2 {
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-4);
+  }
+
+  .about__body h3 {
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-3);
+  }
+
+  .about__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding-left: var(--space-6);
+  }
+
+  .about__list li {
+    font-size: var(--text-base);
+    line-height: var(--line-relaxed);
+  }
+
+  .about__cta {
+    display: flex;
+    gap: var(--space-4);
+    margin: var(--space-8) 0;
+    flex-wrap: wrap;
+  }
+
+  .about__divider {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: var(--space-12) 0;
+  }
+
+  @media (max-width: 768px) {
+    .about {
+      padding: var(--space-12) 0;
+    }
+
+    .about__title {
+      font-size: var(--text-4xl);
+      margin-bottom: var(--space-6);
+    }
+
+    .about__body p {
+      font-size: var(--text-base);
+    }
+
+    .about__cta {
+      flex-direction: column;
+    }
+
+    .about__header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+<script>
+  // Copy about page as Markdown
+  document.addEventListener('DOMContentLoaded', () => {
+    const copyButton = document.querySelector('[data-copy-about-markdown]');
+
+    if (copyButton) {
+      copyButton.addEventListener('click', async (e) => {
+        e.preventDefault();
+        try {
+          const aboutBody = document.querySelector('.about__body');
+          if (!aboutBody) {
+            console.error('About body not found');
+            return;
+          }
+
+          // Extract text content with basic formatting
+          const title = '# About Agent Experience Design\n\n';
+          const content = aboutBody.innerText;
+          const markdown = title + content;
+
+          await navigator.clipboard.writeText(markdown);
+
+          // Visual feedback
+          const originalText = copyButton.textContent;
+          copyButton.textContent = '✓ Copied!';
+          setTimeout(() => {
+            copyButton.textContent = originalText;
+          }, 2000);
+        } catch (err) {
+          console.error('Failed to copy:', err);
+          alert('Failed to copy to clipboard');
+        }
+      });
+    } else {
+      console.error('Copy button not found');
+    }
+  });
+</script>

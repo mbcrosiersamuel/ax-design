@@ -1,0 +1,171 @@
+---
+interface Props {
+  id: string;
+  title: string;
+}
+
+const { id, title } = Astro.props;
+---
+
+<dialog class="modal" id={id} aria-labelledby={`${id}-title`}>
+  <div class="modal__overlay" data-close-modal={id}></div>
+  <div class="modal__content">
+    <div class="modal__header">
+      <h2 class="modal__title" id={`${id}-title`}>{title}</h2>
+      <button
+        class="modal__close"
+        data-close-modal={id}
+        aria-label="Close modal"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="modal__body">
+      <slot />
+    </div>
+  </div>
+</dialog>
+
+<style>
+  .modal {
+    position: fixed;
+    inset: 0;
+    z-index: var(--z-modal);
+    border: none;
+    padding: 0;
+    background: transparent;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-base);
+  }
+
+  .modal[open] {
+    opacity: 1;
+    pointer-events: auto;
+    display: flex;
+  }
+
+  .modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+  }
+
+  .modal__content {
+    position: relative;
+    z-index: calc(var(--z-modal) + 1);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    max-width: 500px;
+    width: calc(100vw - var(--space-8));
+    margin: 10vh auto;
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+    gap: var(--space-4);
+  }
+
+  .modal__title {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+  }
+
+  .modal__close {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    color: var(--color-text-muted);
+    transition: all var(--transition-fast);
+  }
+
+  .modal__close:hover {
+    background: var(--color-bg-subtle);
+    color: var(--color-text);
+  }
+
+  .modal__body {
+    padding: var(--space-6);
+    overflow-y: auto;
+  }
+
+  @media (max-width: 768px) {
+    .modal__content {
+      margin: 5vh auto;
+      max-height: 90vh;
+    }
+
+    .modal__header,
+    .modal__body {
+      padding: var(--space-4);
+    }
+
+    .modal__title {
+      font-size: var(--text-xl);
+    }
+  }
+</style>
+
+<script is:inline>
+  // Modal functionality
+  window.addEventListener('DOMContentLoaded', () => {
+    // Open modal
+    document.querySelectorAll('[data-open-modal]').forEach((trigger) => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modalId = trigger.dataset.openModal;
+        if (modalId) {
+          const modal = document.getElementById(modalId);
+          if (modal && modal.showModal) {
+            modal.showModal();
+          }
+        }
+      });
+    });
+
+    // Close modal
+    document.querySelectorAll('[data-close-modal]').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        const modalId = trigger.dataset.closeModal;
+        if (modalId) {
+          const modal = document.getElementById(modalId);
+          if (modal && modal.close) {
+            modal.close();
+          }
+        }
+      });
+    });
+
+    // Close on escape key
+    document.querySelectorAll('.modal').forEach((modal) => {
+      modal.addEventListener('cancel', (e) => {
+        e.preventDefault();
+        modal.close();
+      });
+    });
+  });
+</script>

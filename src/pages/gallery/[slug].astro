@@ -1,0 +1,390 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Button from '@components/Button.astro';
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const formattedDate = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+}).format(post.data.date);
+
+// Get the raw markdown content
+const markdownContent = post.body;
+---
+
+<BaseLayout
+  title={`${post.data.title} | agentexperience.design`}
+  description={post.data.summary}
+  image={post.data.heroImage}
+>
+  <article class="post">
+    <div class="container">
+      <div class="post__content">
+        <!-- Header -->
+        <header class="post__header">
+          <div class="post__meta">
+            <span class:list={['post__badge', `post__badge--${post.data.verdict}`]}>
+              {post.data.verdict === 'good' ? 'Good AX' : 'Bad AX'}
+            </span>
+            <time class="post__date" datetime={post.data.date.toISOString()}>
+              {formattedDate}
+            </time>
+            <Button variant="ghost" size="sm" class="copy-markdown-btn" data-copy-markdown>
+              📋 Copy as Markdown
+            </Button>
+          </div>
+
+          <h1 class="post__title">{post.data.title}</h1>
+          <div class="post__companies">
+            {post.data.companies.map((company) => (
+              <div class="post__company">
+                {company.logo && (
+                  <img
+                    src={company.logo}
+                    alt={`${company.name} logo`}
+                    class="post__company-logo"
+                  />
+                )}
+                <span class="post__company-name">{company.name}</span>
+              </div>
+            ))}
+          </div>
+          <p class="post__summary">{post.data.summary}</p>
+
+          {post.data.tags.length > 0 && (
+            <div class="post__tags">
+              {post.data.tags.map((tag) => (
+                <span class="post__tag">{tag}</span>
+              ))}
+            </div>
+          )}
+        </header>
+
+        <!-- Hidden markdown content for copying -->
+        <pre id="markdown-content" style="display: none;">{`---
+title: "${post.data.title}"
+companies:
+${post.data.companies.map(c => `  - name: "${c.name}"${c.logo ? `\n    logo: "${c.logo}"` : ''}`).join('\n')}
+verdict: "${post.data.verdict}"
+summary: "${post.data.summary}"
+date: ${post.data.date.toISOString().split('T')[0]}
+tags: ${JSON.stringify(post.data.tags)}${post.data.sources.length > 0 ? `\nsources:\n${post.data.sources.map(s => `  - "${s}"`).join('\n')}` : ''}
+---
+
+${markdownContent}`}</pre>
+
+        <!-- Hero Image -->
+        {post.data.heroImage && (
+          <div class="post__hero">
+            <img
+              src={post.data.heroImage}
+              alt={`${post.data.company} - ${post.data.title}`}
+            />
+          </div>
+        )}
+
+        <!-- Content -->
+        <div class="post__body prose">
+          <Content />
+        </div>
+
+        <!-- Sources -->
+        {post.data.sources.length > 0 && (
+          <aside class="post__sources">
+            <h3>Sources & References</h3>
+            <ul>
+              {post.data.sources.map((source) => (
+                <li>
+                  <a href={source} target="_blank" rel="noopener noreferrer">
+                    {source}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        )}
+
+        <!-- Actions -->
+        <div class="post__actions">
+          <Button variant="secondary" href="/gallery">
+            ← Back to Gallery
+          </Button>
+        </div>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .post {
+    padding: var(--space-16) 0;
+  }
+
+  .post__content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  .post__header {
+    margin-bottom: var(--space-12);
+  }
+
+  .post__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .post__meta :global(.copy-markdown-btn) {
+    margin-left: auto;
+  }
+
+  .post__badge {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .post__badge--good {
+    background: var(--color-good-bg);
+    color: var(--color-good);
+  }
+
+  .post__badge--bad {
+    background: var(--color-bad-bg);
+    color: var(--color-bad);
+  }
+
+  .post__date {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .post__title {
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-4);
+    line-height: var(--line-tight);
+  }
+
+  .post__companies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    align-items: center;
+    margin-bottom: var(--space-4);
+  }
+
+  .post__company {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--color-text-muted);
+  }
+
+  .post__company-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+  }
+
+  .post__company-name {
+    line-height: 1;
+  }
+
+  .post__summary {
+    font-size: var(--text-base);
+    line-height: var(--line-relaxed);
+    color: var(--color-text);
+  }
+
+  .post__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-6);
+  }
+
+  .post__tag {
+    font-size: var(--text-sm);
+    padding: var(--space-2) var(--space-3);
+    background: var(--color-bg-subtle);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-muted);
+  }
+
+  .post__hero {
+    margin-bottom: var(--space-12);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+  }
+
+  .post__hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .post__body {
+    margin-bottom: var(--space-12);
+  }
+
+  /* Prose styles for markdown content */
+  .prose {
+    font-size: var(--text-lg);
+    line-height: var(--line-relaxed);
+  }
+
+  .prose :global(h2) {
+    margin-top: var(--space-12);
+    margin-bottom: var(--space-4);
+  }
+
+  .prose :global(h3) {
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-3);
+  }
+
+  .prose :global(p) {
+    margin-bottom: var(--space-6);
+  }
+
+  .prose :global(ul),
+  .prose :global(ol) {
+    margin-bottom: var(--space-6);
+    padding-left: var(--space-6);
+  }
+
+  .prose :global(li) {
+    margin-bottom: var(--space-3);
+  }
+
+  .prose :global(pre) {
+    margin-bottom: var(--space-6);
+  }
+
+  .prose :global(blockquote) {
+    border-left: 4px solid var(--color-accent);
+    padding-left: var(--space-6);
+    margin: var(--space-6) 0;
+    font-style: italic;
+    color: var(--color-text-muted);
+  }
+
+  .post__sources {
+    padding: var(--space-6);
+    background: var(--color-bg-subtle);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-12);
+  }
+
+  .post__sources h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-4);
+  }
+
+  .post__sources ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .post__sources a {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    text-decoration: underline;
+    word-break: break-all;
+  }
+
+  .post__sources a:hover {
+    color: var(--color-text);
+  }
+
+  .post__actions {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--color-border);
+  }
+
+  @media (max-width: 768px) {
+    .post {
+      padding: var(--space-12) 0;
+    }
+
+    .post__title {
+      font-size: var(--text-4xl);
+    }
+
+    .post__company,
+    .post__summary {
+      font-size: var(--text-base);
+    }
+
+    .prose {
+      font-size: var(--text-base);
+    }
+
+    .post__actions {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<script>
+  // Copy as Markdown functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const copyButton = document.querySelector('[data-copy-markdown]');
+    const markdownContent = document.getElementById('markdown-content');
+
+    if (copyButton && markdownContent) {
+      copyButton.addEventListener('click', async (e) => {
+        e.preventDefault();
+        try {
+          const markdown = markdownContent.textContent?.trim() || '';
+          await navigator.clipboard.writeText(markdown);
+
+          // Visual feedback
+          const originalText = copyButton.textContent;
+          copyButton.textContent = '✓ Copied!';
+          setTimeout(() => {
+            copyButton.textContent = originalText;
+          }, 2000);
+        } catch (err) {
+          console.error('Failed to copy:', err);
+          alert('Failed to copy to clipboard');
+        }
+      });
+    } else {
+      console.error('Copy button or markdown content not found', { copyButton, markdownContent });
+    }
+  });
+</script>

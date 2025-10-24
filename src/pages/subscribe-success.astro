@@ -1,0 +1,109 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Button from '@components/Button.astro';
+---
+
+<BaseLayout
+  title="Thank You for Subscribing | agentexperience.design"
+  description="Thank you for subscribing to Agent Experience updates"
+>
+  <div class="success">
+    <div class="container">
+      <div class="success__content">
+        <div class="success__icon">✓</div>
+        <h1 class="success__title">Thank You for Subscribing!</h1>
+        <p class="success__message">
+          We've received your subscription request. You'll receive a confirmation email shortly.
+        </p>
+        <p class="success__note">
+          Please check your inbox (and spam folder) for the confirmation email.
+        </p>
+        <div class="success__actions">
+          <Button variant="primary" size="lg" href="/gallery">
+            Browse the Gallery
+          </Button>
+          <Button variant="secondary" size="lg" href="/">
+            Back to Home
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .success {
+    padding: var(--space-24) 0;
+    text-align: center;
+  }
+
+  .success__content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .success__icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--space-8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    background: var(--color-good-bg);
+    color: var(--color-good);
+    border-radius: 50%;
+    border: 3px solid var(--color-good);
+  }
+
+  .success__title {
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-6);
+    line-height: var(--line-tight);
+  }
+
+  .success__message {
+    font-size: var(--text-xl);
+    line-height: var(--line-relaxed);
+    color: var(--color-text);
+    margin-bottom: var(--space-4);
+  }
+
+  .success__note {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-12);
+  }
+
+  .success__actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .success {
+      padding: var(--space-16) 0;
+    }
+
+    .success__icon {
+      width: 60px;
+      height: 60px;
+      font-size: 36px;
+    }
+
+    .success__title {
+      font-size: var(--text-4xl);
+    }
+
+    .success__message {
+      font-size: var(--text-base);
+    }
+
+    .success__actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+</style>

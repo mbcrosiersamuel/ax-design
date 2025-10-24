@@ -1,0 +1,149 @@
+---
+import Button from './Button.astro';
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="/" class="header__logo">
+      agentexperience.design
+    </a>
+
+    <nav class="header__nav" aria-label="Main navigation">
+      <a
+        href="/gallery"
+        class:list={['header__link', { 'header__link--active': currentPath.startsWith('/gallery') }]}
+      >
+        Gallery
+      </a>
+      <a
+        href="/about"
+        class:list={['header__link', { 'header__link--active': currentPath === '/about' }]}
+      >
+        About
+      </a>
+    </nav>
+
+    <a href="/#subscribe" class="subscribe-btn">
+      Subscribe
+    </a>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    height: var(--header-height);
+  }
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: var(--space-8);
+  }
+
+  .header__logo {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    transition: transform var(--transition-fast);
+  }
+
+  .header__logo:hover {
+    transform: translateY(-1px);
+    color: var(--color-text);
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+    margin-right: auto;
+    margin-left: var(--space-12);
+  }
+
+  .header__link {
+    font-size: var(--text-base);
+    font-weight: 500;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    position: relative;
+  }
+
+  .header__link:hover {
+    color: var(--color-text);
+    background: var(--color-bg-subtle);
+  }
+
+  .header__link--active {
+    color: var(--color-text);
+  }
+
+  .header__link--active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-accent);
+  }
+
+  .subscribe-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .subscribe-btn:hover {
+    background: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+    color: var(--color-bg);
+  }
+
+  @media (max-width: 768px) {
+    .header__nav {
+      gap: var(--space-4);
+      margin-left: var(--space-6);
+    }
+
+    .header__logo {
+      font-size: var(--text-xl);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header__inner {
+      gap: var(--space-4);
+    }
+
+    .header__nav {
+      margin-left: var(--space-4);
+      gap: var(--space-2);
+    }
+
+    .header__link {
+      font-size: var(--text-sm);
+      padding: var(--space-1) var(--space-2);
+    }
+  }
+</style>

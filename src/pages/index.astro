@@ -1,0 +1,348 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Button from '@components/Button.astro';
+---
+
+<BaseLayout
+  title="agentexperience.design - Agent Experience Patterns"
+  description="Agent Experience design patterns and best practices for the agentic web"
+>
+  <div class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Agent Experience Design<br />for the Modern Web
+        </h1>
+        <p class="hero__subtitle">
+          Everyone likes to talk about the 'agentic future,'<br>but what does it actually look like to design for it? 
+        </p>
+        <div class="hero__actions">
+          <Button variant="primary" size="lg" href="/gallery">
+            Explore the Gallery
+          </Button>
+          <Button variant="secondary" size="lg" href="/about">
+            About this Site
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="what-is-ax">
+    <div class="container">
+      <div class="what-is-ax__content">
+        <h2 class="what-is-ax__title">What is Agent Experience?</h2>
+
+        <p class="what-is-ax__intro">
+          Agent Experience (AX) refers to how well your website or application works for AI agents, bots, and other automated systems. You can think of Agent Experience as similar to User Experience (UX), but for an era where AI agents are often acting as delegates for human users.
+          <br><br>
+          To learn more about Agent Experience and its core principles, check out <a href="https://agentexperience.ax/">AgentExperience.ax</a> or read Mathias Biilmann's original blog post, <a href="https://biilmann.blog/articles/introducing-ax/">Introducing AX: Why Agent Experience Matters</a>, which coined the term.
+        </p>
+
+        <div class="why-matters">
+          <h3 class="why-matters__title">Why AX Matters</h3>
+          <p class="why-matters__text">
+            As AI agents become more prevalent in browsing, shopping, and information gathering, websites that prioritize agent experience will be more discoverable, usable, and successful. <br> <br> Good AX design often improves human UX (and accessibility) as well!
+          </p>
+        </div>
+
+        <p class="what-is-ax__site-role">
+          The goal of this site is to highlight real-world examples of both good and bad agent experience. In general, good agent experience (AX) design incorporates structured content in plain text, allowing agents to easily gather information and take actions. Sites should also ensure that agents are able to access the content, context, and actions they need to act as delegates for humans.  <br> <br> By examining actual implementations, we can learn what works, what doesn't, and how to build better experiences for the agentic web. 
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="subscribe">
+    <div class="container">
+      <div class="cta__content">
+        <h2 class="cta__title">Stay Updated</h2>
+        <p class="cta__description">
+          Get notified when we publish new Agent Experience (AX) design examples and insights.
+        </p>
+
+        <form
+          class="cta__form"
+          method="POST"
+          action="/subscribe-success"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          name="subscribe"
+        >
+          <input type="hidden" name="form-name" value="subscribe" />
+          <p class="visually-hidden">
+            <label>
+              Don't fill this out if you're human: <input name="bot-field" />
+            </label>
+          </p>
+
+          <div class="form-row">
+            <input
+              type="text"
+              name="subscriber-name"
+              id="subscriber-name"
+              placeholder="Your name"
+              required
+              autocomplete="name"
+              class="form-input"
+            />
+            <input
+              type="email"
+              name="subscriber-email"
+              id="subscriber-email"
+              placeholder="your@email.com"
+              required
+              autocomplete="email"
+              class="form-input"
+            />
+            <button type="submit" class="form-submit">
+              Subscribe
+            </button>
+          </div>
+
+          <p class="form-help">
+            We'll send you a confirmation email. No spam, unsubscribe anytime.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: var(--space-24) 0 var(--space-20) 0;
+    text-align: center;
+  }
+
+  .hero__content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero__title {
+    font-size: var(--text-5xl);
+    font-weight: 700;
+    margin-bottom: var(--space-6);
+    line-height: var(--line-tight);
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-xl);
+    color: var(--color-text-muted);
+    line-height: var(--line-relaxed);
+    margin-bottom: var(--space-8);
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .what-is-ax {
+    padding: var(--space-20) 0;
+    background: var(--color-bg-subtle);
+  }
+
+  .what-is-ax__content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .what-is-ax__title {
+    font-size: var(--text-4xl);
+    text-align: center;
+    margin-bottom: var(--space-6);
+  }
+
+  .what-is-ax__intro {
+    font-size: var(--text-xl);
+    line-height: var(--line-relaxed);
+    text-align: center;
+    color: var(--color-text);
+    margin-bottom: var(--space-12);
+  }
+
+  .why-matters {
+    padding: var(--space-8);
+    background: var(--color-bg);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-xl);
+    text-align: center;
+  }
+
+  .why-matters__title {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .why-matters__text {
+    font-size: var(--text-lg);
+    line-height: var(--line-relaxed);
+    color: var(--color-text);
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  .what-is-ax__site-role {
+    font-size: var(--text-lg);
+    line-height: var(--line-relaxed);
+    text-align: center;
+    color: var(--color-text);
+    margin-top: var(--space-12);
+  }
+
+  .cta {
+    padding: var(--space-20) 0;
+  }
+
+  .cta__content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--space-16);
+    background: var(--color-bg-subtle);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+  }
+
+  .cta__title {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .cta__description {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    line-height: var(--line-relaxed);
+    margin-bottom: var(--space-8);
+  }
+
+  .cta__form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+  }
+
+  .form-input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--text-base);
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+  }
+
+  .form-input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .form-submit {
+    width: 100%;
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-bg);
+    background: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+
+  .form-submit:hover {
+    background: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+  }
+
+  .form-submit:active {
+    transform: translateY(1px);
+  }
+
+  .form-help {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    text-align: center;
+    line-height: var(--line-relaxed);
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: var(--space-16) 0 var(--space-12) 0;
+    }
+
+    .hero__title {
+      font-size: var(--text-4xl);
+    }
+
+    .hero__subtitle {
+      font-size: var(--text-base);
+    }
+
+    .hero__actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .what-is-ax {
+      padding: var(--space-12) 0;
+    }
+
+    .what-is-ax__title {
+      font-size: var(--text-3xl);
+    }
+
+    .what-is-ax__intro {
+      font-size: var(--text-base);
+    }
+
+    .why-matters {
+      padding: var(--space-6);
+    }
+
+    .why-matters__title {
+      font-size: var(--text-xl);
+    }
+
+    .why-matters__text {
+      font-size: var(--text-base);
+    }
+
+    .what-is-ax__site-role {
+      font-size: var(--text-base);
+    }
+
+    .cta {
+      padding: var(--space-12) 0;
+    }
+
+    .cta__content {
+      padding: var(--space-8);
+    }
+
+    .cta__title {
+      font-size: var(--text-3xl);
+    }
+
+    .cta__description {
+      font-size: var(--text-base);
+    }
+  }
+</style>
