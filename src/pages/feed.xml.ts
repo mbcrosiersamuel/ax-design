@@ -17,7 +17,7 @@ export async function GET(context: APIContext) {
       link: `/gallery/${post.slug}/`,
       categories: post.data.tags,
       customData: `
-        <company>${post.data.company}</company>
+        <companies>${post.data.companies.map(c => `<company name="${c.name}"${c.logo ? ` logo="${c.logo}"` : ''} />`).join('')}</companies>
         <verdict>${post.data.verdict}</verdict>
       `,
     })),

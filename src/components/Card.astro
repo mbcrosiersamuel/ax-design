@@ -28,7 +28,7 @@ const formattedDate = new Intl.DateTimeFormat('en-US', {
   <a href={`/gallery/${slug}`} class="card__link">
     {heroImage && (
       <div class="card__image">
-        <img src={heroImage} alt={`${company} - ${title}`} loading="lazy" />
+        <img src={heroImage} alt={`${companies.map(c => c.name).join(', ')} - ${title}`} loading="lazy" />
       </div>
     )}
 

@@ -68,6 +68,23 @@ a:hover {
   color: var(--color-text-muted);
 }
 
+/* Links in prose/content */
+p a,
+li a,
+.prose a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color var(--transition-fast);
+}
+
+p a:hover,
+li a:hover,
+.prose a:hover {
+  color: var(--color-accent-hover);
+  text-decoration-color: var(--color-accent-hover);
+}
+
 button {
   font-family: inherit;
   font-size: inherit;

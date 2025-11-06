@@ -29,7 +29,7 @@ import Button from '@components/Button.astro';
             If the future is agentic, and agents browse, shop, and book on our behalf, then our web experiences must be attractive and usable for agents as well as for humans.
           </p>
           <p>
-            This site highlights examples of great AX practices, and anti-patterns, so we can learn together. We've also tried to incorporate (some, but not all) AX best practices here. Every page offers a Copy as Markdown option and is documented in <code>/llms.txt</code> for agent consumption.
+            This site highlights examples of great AX practices so we can learn together. We've also tried to incorporate (some, but not all) AX best practices here. Every page offers a Copy as Markdown option and is documented in <code>/llms.txt</code> for agent consumption.
           </p>
 
           <p>
@@ -166,7 +166,7 @@ import Button from '@components/Button.astro';
 
           // Extract text content with basic formatting
           const title = '# About Agent Experience Design\n\n';
-          const content = aboutBody.innerText;
+          const content = aboutBody.textContent;  // Changed from 'innerText' to 'textContent'
           const markdown = title + content;
 
           await navigator.clipboard.writeText(markdown);

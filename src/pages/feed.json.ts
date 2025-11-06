@@ -20,7 +20,7 @@ export async function GET(context: APIContext) {
       content_text: post.data.summary,
       date_published: post.data.date.toISOString(),
       tags: post.data.tags,
-      _company: post.data.company,
+      _companies: post.data.companies,
       _verdict: post.data.verdict,
       _sources: post.data.sources,
       ...(post.data.heroImage && { image: `${context.site}${post.data.heroImage}` }),
