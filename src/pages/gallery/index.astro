@@ -7,19 +7,18 @@ const allPosts = await getCollection('posts');
 const sortedPosts = allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
 const goodPosts = sortedPosts.filter(post => post.data.verdict === 'good');
-const badPosts = sortedPosts.filter(post => post.data.verdict === 'bad');
 ---
 
 <BaseLayout
   title="Gallery | agentexperience.design"
-  description="Explore examples of good and bad Agent Experience design patterns"
+  description="Explore examples of good Agent Experience design patterns"
 >
   <div class="gallery">
     <div class="container">
       <header class="gallery__header">
         <h1 class="gallery__title">Agent Experience (AX) Design Gallery</h1>
         <p class="gallery__subtitle">
-          Real-world examples of AX Design, both good and bad.
+          Real-world examples of good AX Design and Agent-Friendly patterns.
         </p>
       </header>
 
@@ -30,10 +29,6 @@ const badPosts = sortedPosts.filter(post => post.data.verdict === 'bad');
             <span class="badge badge--good">Good AX</span>
             Agent-Friendly Patterns
           </h2>
-          <p class="gallery__section-description">
-            These examples demonstrate excellent Agent Experience through clear APIs,
-            structured data, and machine-readable formats.
-          </p>
         </div>
 
         <div class="gallery__grid">
@@ -53,39 +48,6 @@ const badPosts = sortedPosts.filter(post => post.data.verdict === 'bad');
 
         {goodPosts.length === 0 && (
           <p class="gallery__empty">No good examples yet. Check back soon!</p>
-        )}
-      </section>
-
-      <!-- Bad AX Section -->
-      <section class="gallery__section">
-        <div class="gallery__section-header">
-          <h2 class="gallery__section-title">
-            <span class="badge badge--bad">Bad AX</span>
-            Anti-Patterns to Avoid
-          </h2>
-          <p class="gallery__section-description">
-            These examples show what happens when Agent Experience is ignored,
-            making automation difficult or impossible.
-          </p>
-        </div>
-
-        <div class="gallery__grid">
-          {badPosts.map((post) => (
-            <Card
-              title={post.data.title}
-              companies={post.data.companies}
-              verdict={post.data.verdict}
-              summary={post.data.summary}
-              date={post.data.date}
-              slug={post.slug}
-              heroImage={post.data.heroImage}
-              tags={post.data.tags}
-            />
-          ))}
-        </div>
-
-        {badPosts.length === 0 && (
-          <p class="gallery__empty">No bad examples yet. Fortunately!</p>
         )}
       </section>
     </div>

@@ -37,7 +37,7 @@ const markdownContent = post.body;
         <header class="post__header">
           <div class="post__meta">
             <span class:list={['post__badge', `post__badge--${post.data.verdict}`]}>
-              {post.data.verdict === 'good' ? 'Good AX' : 'Bad AX'}
+              {post.data.verdict === 'good' ? 'Good AX' : 'AX Example'}
             </span>
             <time class="post__date" datetime={post.data.date.toISOString()}>
               {formattedDate}
@@ -91,7 +91,7 @@ ${markdownContent}`}</pre>
           <div class="post__hero">
             <img
               src={post.data.heroImage}
-              alt={`${post.data.company} - ${post.data.title}`}
+              alt={`${post.data.companies.map(c => c.name).join(', ')} - ${post.data.title}`}
             />
           </div>
         )}

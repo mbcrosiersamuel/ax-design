@@ -1,32 +1,12 @@
-# ax.design - Agent Experience Design Patterns
+# Agent Experience Design Examples
 
-A curated collection of Agent Experience (AX) design patterns showcasing best practices and anti-patterns for the agentic web.
+A curated collection of Agent Experience (AX) design patterns showcasing best practices for the agentic web.
 
-**Live Site:** https://agentexperience.design
+**Live Site:** https://www.agentexperience.design
 
 ## About
 
-ax.design demonstrates real-world examples of both excellent and poor agent-friendly design, helping developers build better experiences for AI agents, bots, and automated systems.
-
-## Features
-
-- **Curated Examples**: Real-world patterns categorized as Good AX and Bad AX
-- **Agent-Friendly**: Built with AX best practices
-  - RSS and JSON feeds (`/feed.xml`, `/feed.json`)
-  - Machine-readable formats
-  - Agent guidance file (`/llms.txt`)
-  - Sitemap and robots.txt
-- **Modern Stack**: Built with Astro, TypeScript, and modern web standards
-- **Responsive Design**: Mobile-first, accessible, and fast
-- **Component-Based**: Modular, reusable components with a consistent design system
-
-## Tech Stack
-
-- **Framework**: [Astro](https://astro.build) 4.x
-- **Language**: TypeScript (strict mode)
-- **Deployment**: Netlify
-- **Styling**: CSS with design tokens
-- **Fonts**: Space Grotesk, Inter, JetBrains Mono
+agentexperience.design demonstrates real-world examples of excellent agent-friendly design, helping developers build better experiences for AI agents, bots, and automated systems.
 
 ## Project Structure
 
@@ -98,7 +78,7 @@ npm run preview
 ---
 title: "Your Post Title"
 company: "Company Name"
-verdict: "good"  # or "bad"
+verdict: "good"
 summary: "Brief summary of the example"
 date: 2025-10-23
 tags: ["api", "schema.org"]
@@ -155,12 +135,6 @@ Interested in contributing examples? Here's how:
 ## License
 
 MIT License - see LICENSE file for details
-
-## Credits
-
-Created and maintained by **M.P. Samuel**
-
-Inspired by [Mathias Biilmann](https://twitter.com/biilmann)'s writing on Agent Experience.
 
 ---
 

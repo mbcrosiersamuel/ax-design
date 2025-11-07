@@ -6,8 +6,8 @@
   --color-text: #0a0a0a;
   --color-text-muted: #737373;
   --color-border: #e5e5e5;
-  --color-accent: #171717;
-  --color-accent-hover: #404040;
+  --color-accent: #14532d;
+  --color-accent-hover: #15803d;
 
   /* Status colors */
   --color-good: #16a34a;
@@ -85,8 +85,8 @@
     --color-text: #fafafa;
     --color-text-muted: #a3a3a3;
     --color-border: #262626;
-    --color-accent: #fafafa;
-    --color-accent-hover: #d4d4d4;
+    --color-accent: #22c55e;
+    --color-accent-hover: #4ade80;
 
     --color-good-bg: #14532d;
     --color-bad-bg: #7f1d1d;
