@@ -13,11 +13,24 @@ sources:
 
 Supabase has been one of the biggest winners of the vibe-coding era, for a simple reason: they have a great 'Agent Experience.' In this case, it mainly means they have great APIs that allow for easy integrations.
 
-A lot of developer tools (or, tools in general) require users to log in and click around extensively to make things happen.
+A lot of developer tools (or, tools in general) require users to log in and click around extensively to make things happen. In his talk at YC Startup School, Andrej Karpathy highlighted this, using Clerk as an example:
+
+![](public/images/supabase/karpathy-slide.png)
+
+Since setup requires lots of clicking and buttons, this is extremely hard for agents to execute on their own. Some companies have started to realize this, and are actively working toward replacing 'clicks' or other user-centric steps, with agent-friendly options based on code. 
+
+![](public/images/supabase/karpathy-slide-good.png)
+
+In contrast, Supabase got this right from the start. In addition to being user friendly, Supabase's tools are also agent and integration friendly, allowing for setup and provisioning directly via APIs and code, without requiring humans to click around at all.
+
+As a result, Supabase quickly saw the benefits of prioritizing Agent Experience (AX) as it became the preferred database provider for a wide range of vibe coding tools:
 
 
-Source: https://www.latent.space/p/s3
+https://x.com/kiwicopple/status/1894251335224320000
 
-Clerk actually got called out for this by Andrej Karpathy in a recent presnetation:
+![](public/images/supabase/supabase-growth.png)
 
-In contrast, 
+
+https://www.news.aakashg.com/p/ai-prototyping-tutorial
+
+https://x.com/kiwicopple/status/1914472502895804761
