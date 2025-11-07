@@ -23,6 +23,14 @@ const formattedDate = new Intl.DateTimeFormat('en-US', {
 
 // Get the raw markdown content
 const markdownContent = post.body;
+
+// Helper function to get logo URL
+const getLogoUrl = (logoPath?: string) => {
+  if (!logoPath) return undefined;
+  // If path starts with /, it's already a public path - return as is
+  // Astro will serve public assets correctly
+  return logoPath.startsWith('/') ? logoPath : `/${logoPath}`;
+};
 ---
 
 <BaseLayout
@@ -53,7 +61,7 @@ const markdownContent = post.body;
               <div class="post__company">
                 {company.logo && (
                   <img
-                    src={company.logo}
+                    src={getLogoUrl(company.logo)}
                     alt={`${company.name} logo`}
                     class="post__company-logo"
                   />
