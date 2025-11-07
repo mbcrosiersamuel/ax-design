@@ -44,19 +44,19 @@ Depending on the length of your documentation, this may be too much context for 
 
 These small touches make it easier for LLMs to find, interpret, and use your content, and Mintlify supports them out of the box - both for their own site, and for their customers' sites, which is pretty cool.
 
-![Screenshot of Mintlify's documentation showing the out-of-hte-box support for LLMs.txt](public/images/mintlify/llms-txt.png)
+![Screenshot of Mintlify's documentation showing the out-of-hte-box support for LLMs.txt](/images/mintlify/llms-txt.png)
 
 ## An Aside: Copy Page Button
 
 Another nice feature Mintlify is their 'Copy Page' / Markdown export functionality. This allows users to easily copy a markdown version of the page, or export that markdown directly into an AI tool of their choice:
 
-![Mintlify buttons on the documentation showing options to copy paste as markdown for LLMs, open in ChatGPT, open in Claude, connect to Cursor, or connect to VSCode](public/images/mintlify/copy-page.png)
+![Mintlify buttons on the documentation showing options to copy paste as markdown for LLMs, open in ChatGPT, open in Claude, connect to Cursor, or connect to VSCode](/images/mintlify/copy-page.png)
 
 This is a UX benefit, not an AX one: it's designed for humans using AI tools, rather than AI-tool-first, but it's very nice for the transitional phase we're in today. 
 
 A number of other sites that don't use Mintlify (such as Posthog, shown below) have also started to offer this. I suspect it will move beyond documentation to a wide range of websites soon:
 
-![Posthog documentation page showing options to copy as markdown, view as markdown, open in ChatGPT, or open in Claude](public/images/mintlify/posthog-copy-page.png)
+![Posthog documentation page showing options to copy as markdown, view as markdown, open in ChatGPT, or open in Claude](/images/mintlify/posthog-copy-page.png)
 
 ## Broader than Documentation
 
