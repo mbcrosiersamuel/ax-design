@@ -37,7 +37,7 @@
   </div>
 
   <p class="form-help">
-    We'll send you a confirmation email. No spam, unsubscribe anytime.
+    No spam, unsubscribe anytime.
   </p>
 
   <button type="submit" class="form-submit">
@@ -157,7 +157,7 @@
           });
 
           if (response.ok) {
-            message.textContent = 'Thanks! Check your email to confirm your subscription.';
+            message.textContent = 'Thanks! You\'ve been subscribed.';
             message.className = 'form-message success';
             form.reset();
           } else {
