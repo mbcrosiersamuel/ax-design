@@ -87,7 +87,7 @@ jspm_packages/
 
 # Gatsby files
 .cache/
-public
+# public - REMOVED: Astro needs this folder committed!
 
 # Storybook build outputs
 .out
