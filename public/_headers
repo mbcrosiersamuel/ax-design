@@ -1,18 +1,15 @@
-/images/logos/*.svg
-  Content-Type: image/svg+xml
-  Cache-Control: public, max-age=31536000
-
-/images/mintlify/*.png
-  Content-Type: image/png
-  Cache-Control: public, max-age=31536000
-
-/images/supabase/*.png
-  Content-Type: image/png
-  Cache-Control: public, max-age=31536000
-
-/*.svg
-  Content-Type: image/svg+xml
-
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
+
+/images/*
+  Cache-Control: public, max-age=31536000
+
+/images/logos/*
+  Content-Type: image/svg+xml
+
+/images/mintlify/*
+  Content-Type: image/png
+
+/images/supabase/*
+  Content-Type: image/png
