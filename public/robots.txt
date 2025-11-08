@@ -1,0 +1,15 @@
+# robots.txt for agentexperience.design
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://agentexperience.design/sitemap.xml
+
+# Agent guidance
+Allow: /llms.txt
+Allow: /feed.xml
+Allow: /feed.json
+
+# Crawl rate - be gentle
+Crawl-delay: 1
