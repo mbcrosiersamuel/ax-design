@@ -127,21 +127,41 @@ const currentPath = Astro.url.pathname;
     .header__logo {
       font-size: var(--text-xl);
     }
+
+    .subscribe-btn {
+      padding: var(--space-2) var(--space-3);
+      font-size: var(--text-xs);
+    }
   }
 
   @media (max-width: 480px) {
     .header__inner {
-      gap: var(--space-4);
+      gap: var(--space-2);
+    }
+
+    .header__logo {
+      font-size: var(--text-lg);
+      flex-shrink: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .header__nav {
-      margin-left: var(--space-4);
+      margin-left: var(--space-2);
       gap: var(--space-2);
     }
 
     .header__link {
-      font-size: var(--text-sm);
+      font-size: var(--text-xs);
       padding: var(--space-1) var(--space-2);
+    }
+
+    .subscribe-btn {
+      padding: var(--space-2);
+      font-size: var(--text-xs);
+      flex-shrink: 0;
     }
   }
 </style>
