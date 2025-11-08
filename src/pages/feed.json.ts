@@ -1,6 +1,7 @@
 import { getCollection } from 'astro:content';
 import type { APIContext } from 'astro';
 
+
 export async function GET(context: APIContext) {
   const posts = await getCollection('posts');
   const sortedPosts = posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());

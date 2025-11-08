@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 
+
 export const GET: APIRoute = async ({ site }) => {
   const posts = await getCollection('posts');
   const baseUrl = site?.toString() || 'https://agentexperience.design';
