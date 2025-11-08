@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build && npm run copy-public",
-    "copy-public": "cp -r public/* dist/ 2>/dev/null || true",
+    "build": "astro check && astro build && node copy-public.js",
     "preview": "astro preview",
     "astro": "astro"
   },
