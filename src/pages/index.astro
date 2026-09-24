@@ -12,10 +12,10 @@ import Button from '@components/Button.astro';
     <div class="container">
       <div class="hero__content">
         <h1 class="hero__title">
-          Agent Experience Design<br />for the Modern Web
+          Agent Experience Design for the Modern Web
         </h1>
         <p class="hero__subtitle">
-          Everyone likes to talk about the 'agentic future,'<br>but what does it actually look like to design for it? 
+          Everyone likes to talk about the 'agentic future,' but what does it actually look like to design for it?
         </p>
         <div class="hero__actions">
           <Button variant="primary" size="lg" href="/gallery">
@@ -122,6 +122,7 @@ import Button from '@components/Button.astro';
   }
 
   .hero__title {
+    text-wrap: balance;
     font-size: var(--text-5xl);
     font-weight: 700;
     margin-bottom: var(--space-6);
@@ -290,7 +291,7 @@ import Button from '@components/Button.astro';
     }
 
     .hero__title {
-      font-size: var(--text-4xl);
+      font-size: var(--text-3xl);
     }
 
     .hero__subtitle {

@@ -1,0 +1,4934 @@
+[
+ {
+  "site": "developers.openai.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "forter.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "visapaymentsfrontier.io",
+  "tools": 2,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "target.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "omio.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "render.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "netgear.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "quicknode.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "feverup.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "attio.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "crewai.com",
+  "tools": 2,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "redbus.in",
+  "tools": 2,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "monday.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "telnyx.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "ziprecruiter.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "openai.com",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "store.tryrankly.com",
+  "tools": 14,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "emorahealth.com",
+  "tools": 10,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "spree.apparel.monster",
+  "tools": 8,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "webmcp.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "pickcrest.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "store.nekuda.ai",
+  "tools": 6,
+  "status": "demo",
+  "category": "Commerce"
+ },
+ {
+  "site": "openfort.io",
+  "tools": 5,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "specification.website",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "ai.simplepdf.com",
+  "tools": 5,
+  "status": "demo",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "nodecraft.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "attention.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "comparethecloud.net",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "nycrsvps.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "voyacar.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "eworker.ca",
+  "tools": 73,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "cesium-browser-agent.pages.dev",
+  "tools": 61,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "seqcraft.onrender.com",
+  "tools": 57,
+  "status": "demo",
+  "category": "Health & Education"
+ },
+ {
+  "site": "neohack.dev",
+  "tools": 54,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "tracinginsights.com",
+  "tools": 52,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "hunchbank.com",
+  "tools": 47,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "dashboard.orderly.network",
+  "tools": 45,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "birmakine.com",
+  "tools": 44,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "persona-chat.dev",
+  "tools": 42,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "lectern.click",
+  "tools": 40,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "rough-cut.samarthsaxena1672003.workers.dev",
+  "tools": 40,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "vaanzari.com",
+  "tools": 37,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "stockpilot-indol-chi.vercel.app",
+  "tools": 37,
+  "status": "demo",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "urban-planning-copilot.heisenbug.in",
+  "tools": 37,
+  "status": "demo",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "sssnack.com",
+  "tools": 35,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "fiveminutebrief.ai",
+  "tools": 31,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "demos.telerik.com",
+  "tools": 30,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "panoptik-studio.vercel.app",
+  "tools": 30,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "computer.webmcp.com",
+  "tools": 30,
+  "status": "demo",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "vide.zerdalu.com",
+  "tools": 28,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "webroom.openai.chatgpt.site",
+  "tools": 28,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "demo.openforagents.com",
+  "tools": 27,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "bandarra.me",
+  "tools": 27,
+  "status": "demo",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "ourmenuos.online",
+  "tools": 26,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "fieldwork-beat-machine.openai.chatgpt.site",
+  "tools": 26,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "famabook.com",
+  "tools": 25,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "admintoolkit.io",
+  "tools": 24,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "labspace-agent-twin.onrender.com",
+  "tools": 24,
+  "status": "demo",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "react-chess",
+  "tools": 23,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "elane-clothing-boutique.karanrajs.chatgpt.site",
+  "tools": 22,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "pixly.gg",
+  "tools": 22,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "app.voicelogica.ai",
+  "tools": 21,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "sheetcanvas.com",
+  "tools": 21,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "simpletoolstack.com",
+  "tools": 21,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "tryportego.com",
+  "tools": 20,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "waymark-sable.vercel.app",
+  "tools": 20,
+  "status": "demo",
+  "category": "Health & Education"
+ },
+ {
+  "site": "consequence-webmcp.ashrafahmed1232.workers.dev",
+  "tools": 19,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "okeyamy.github.io",
+  "tools": 19,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "relay-webmcp.ashrafahmed1232.workers.dev",
+  "tools": 19,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "ultravioletadao.xyz",
+  "tools": 19,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "ambios-ai.vercel.app",
+  "tools": 18,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "chrissaautomates.com",
+  "tools": 18,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "qotien.fr",
+  "tools": 18,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "toban.app",
+  "tools": 18,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "coinranking.com",
+  "tools": 17,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "every.ai",
+  "tools": 17,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "quitpod.app",
+  "tools": 17,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "sema.run",
+  "tools": 17,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "aozu.mantle.tools",
+  "tools": 16,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "benchmarks.affogata.net",
+  "tools": 16,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "cadence-webmcp.ashrafahmed1232.workers.dev",
+  "tools": 16,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "caleralabs.com",
+  "tools": 16,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "creator.lottiefiles.com",
+  "tools": 16,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "dribba.com",
+  "tools": 16,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "emiliogarcia.org",
+  "tools": 16,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "playground.wordpress.net",
+  "tools": 16,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "webmcp-factory",
+  "tools": 16,
+  "status": "demo",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "guavanumbers.com",
+  "tools": 15,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "nixuracingteam.net",
+  "tools": 15,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "civicdata.co.uk",
+  "tools": 14,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "cutoff-webmcp.vercel.app",
+  "tools": 14,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "drinkwine.ca",
+  "tools": 14,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "matched-webmcp.pages.dev",
+  "tools": 14,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "pitchtheai.com",
+  "tools": 14,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "quokkapix.com",
+  "tools": 14,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "tasklet.ai",
+  "tools": 14,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "2ndface.info",
+  "tools": 13,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "communications.gov.uk",
+  "tools": 13,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "coverredact.com",
+  "tools": 13,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "influzer.ai",
+  "tools": 13,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "letshum.com",
+  "tools": 13,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "okok147.github.io",
+  "tools": 13,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "ourmanynames.com",
+  "tools": 13,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "plymove.com",
+  "tools": 13,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "qrcodecrafter.com",
+  "tools": 13,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "paperie-webmcp-greeting-cards.openai.chatgpt.site",
+  "tools": 13,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "beardedcolonel.co.uk",
+  "tools": 12,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "bestprice.gr",
+  "tools": 12,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "farahsolutions.ae",
+  "tools": 12,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "flatwrite.md",
+  "tools": 12,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "humanforai.dev",
+  "tools": 12,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "jsonstat.com",
+  "tools": 12,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "lens.streaming-radar.com",
+  "tools": 12,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "lobby.host",
+  "tools": 12,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "pdfcn.dev",
+  "tools": 12,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "practicehub.ludara.org",
+  "tools": 12,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "sasi.codes",
+  "tools": 12,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "web.runme.dev",
+  "tools": 12,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "sundaytable.openai.chatgpt.site",
+  "tools": 12,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "app.goodleads.club",
+  "tools": 11,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "citedy.com",
+  "tools": 11,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "clinicforagents.com",
+  "tools": 11,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "cuvo.co",
+  "tools": 11,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "getcatalog.ai",
+  "tools": 11,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "isaacsolomon.dev",
+  "tools": 11,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "marketingmanagerjobs.com",
+  "tools": 11,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "projectfingerprint.com",
+  "tools": 11,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "tygartmedia.com",
+  "tools": 11,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "webmcp.batchrelay.com",
+  "tools": 11,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "wandernote.openai.chatgpt.site",
+  "tools": 11,
+  "status": "demo",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "agentmarkup.dev",
+  "tools": 10,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "aicontentdrop.com",
+  "tools": 10,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "automatelab.tech",
+  "tools": 10,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "bikesandbacon.com",
+  "tools": 10,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "buyandrentrobots.com",
+  "tools": 10,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "carwyapar.com",
+  "tools": 10,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "flightsweeper-webmcp.vercel.app",
+  "tools": 10,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "gebo-bsc.vercel.app",
+  "tools": 10,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "infinitewatch.ai",
+  "tools": 10,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "intlayer.org",
+  "tools": 10,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "jezersko.sk",
+  "tools": 10,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "mabbs.github.io",
+  "tools": 10,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "pixelplace-web.vercel.app",
+  "tools": 10,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "sauna.guide",
+  "tools": 10,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "shop.alpic.ai",
+  "tools": 10,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "thepromogroup.co.za",
+  "tools": 10,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "travelomi.com",
+  "tools": 10,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "uniplasti.com.br",
+  "tools": 10,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "ai-boardroom.ankorbusiness.chatgpt.site",
+  "tools": 10,
+  "status": "demo",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "margin-local-docs.openai.chatgpt.site",
+  "tools": 10,
+  "status": "demo",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "9bot.com.br",
+  "tools": 9,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "actmorehuman.com",
+  "tools": 9,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "agentic-mcps.github.io",
+  "tools": 9,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "aicertificates.study",
+  "tools": 9,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "baerskintactical.com",
+  "tools": 9,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "beckmann.ai",
+  "tools": 9,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "clixrx.com",
+  "tools": 9,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "digitalmirror.ca",
+  "tools": 9,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "getfreightbox.com",
+  "tools": 9,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "maikel-szymanski.de",
+  "tools": 9,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "nektronic.com.ar",
+  "tools": 9,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "nubios.be",
+  "tools": 9,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "pixlpal.com",
+  "tools": 9,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "placemania.sk",
+  "tools": 9,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "suggestapi.com",
+  "tools": 9,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "documesh.selatan.org",
+  "tools": 9,
+  "status": "demo",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "verdant-market-grocery.openai.chatgpt.site",
+  "tools": 9,
+  "status": "demo",
+  "category": "Commerce"
+ },
+ {
+  "site": "webmcp-rocketlauncher",
+  "tools": 9,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "agentronics.dev",
+  "tools": 8,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "angular.courses",
+  "tools": 8,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "corpuslaw.us",
+  "tools": 8,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "domainvaluator.net",
+  "tools": 8,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "drevenica.sk",
+  "tools": 8,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "egmermarketing.com",
+  "tools": 8,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "ejaj.cz",
+  "tools": 8,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "eryc.my.id",
+  "tools": 8,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "export.tools",
+  "tools": 8,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "gauravtiwari31.github.io",
+  "tools": 8,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "go.lmm.best",
+  "tools": 8,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "hansraj-portfolio-five.vercel.app",
+  "tools": 8,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "helloretail.com",
+  "tools": 8,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "identik.me",
+  "tools": 8,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "longbridge.com",
+  "tools": 8,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "madrona.com",
+  "tools": 8,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "miroshark.xyz",
+  "tools": 8,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "muretai.com",
+  "tools": 8,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "originalnadrevenica.sk",
+  "tools": 8,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "pindufai.com",
+  "tools": 8,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "pkaso.ir",
+  "tools": 8,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "qanode.com",
+  "tools": 8,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "rachelthegreat.com",
+  "tools": 8,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "scvd.store",
+  "tools": 8,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "sellerpao.com",
+  "tools": 8,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "siblingssoftware.com.ar",
+  "tools": 8,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "trickybird.com",
+  "tools": 8,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "traffic-webmcp.netlify.app",
+  "tools": 8,
+  "status": "demo",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "webmcp-shoe-store",
+  "tools": 8,
+  "status": "demo",
+  "category": "Commerce"
+ },
+ {
+  "site": "3.14financialcontents.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "aitoys.cloud",
+  "tools": 7,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "app.courtdelta.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "arenna.link",
+  "tools": 7,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "asus.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "beerguide.ca",
+  "tools": 7,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "cocktail.glass",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "denisetiawan.me",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "df.fenx.work",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "docs.getsuperbee.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "entur.no",
+  "tools": 7,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "food.copo.st",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "fyndling.de",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "heatingplus.ro",
+  "tools": 7,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "makinai.co",
+  "tools": 7,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "montote.ch",
+  "tools": 7,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "mutuisupermarket.it",
+  "tools": 7,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "networkthinking.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "paidinsalt.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "pawelkubiak.dev",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "pieterpost.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "postalform.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "scholar-sidekick.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "seiright.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "seminara.online",
+  "tools": 7,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "stalux.needhelp.icu",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "tecet.net",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "thedeepdays.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "theonethingapp.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "tweaktown.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "ucp.new",
+  "tools": 7,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "vaheroesph.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "xingwangzhe.fun",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "zapier.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "zivisaiah.com",
+  "tools": 7,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "pizza-maker",
+  "tools": 7,
+  "status": "demo",
+  "category": "Commerce"
+ },
+ {
+  "site": "teachback-webmcp.haygsiiii.chatgpt.site",
+  "tools": 7,
+  "status": "demo",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "webmcp-flow",
+  "tools": 7,
+  "status": "demo",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "webmcp-flow.vercel.app",
+  "tools": 7,
+  "status": "demo",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "webmcp-tagboard.netlify.app",
+  "tools": 7,
+  "status": "demo",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "a2a.global",
+  "tools": 6,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "adadiamonds.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "adspirer.com",
+  "tools": 6,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "aifoc.us",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "aiomapper.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "alpina.travel",
+  "tools": 6,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "anew.page",
+  "tools": 6,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "apdomi.pl",
+  "tools": 6,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "ashwingopalsamy.in",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "chainstack.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "considus.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "cookieyes.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "darrenhuang.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "demo.cartwright.app",
+  "tools": 6,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "deployhq.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "dreyv.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "felixmadene.ovh",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "getvaaz.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "h3.dev",
+  "tools": 6,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "hedons.io",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "hirejeffgreen.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "karoleloi.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "legalzoom.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "licitia.com.mx",
+  "tools": 6,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "mana.am",
+  "tools": 6,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "mattpyle.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "mcpixels.app",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "music.zacharyr0th.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "napster.com",
+  "tools": 6,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "nexasoluciones.com.ar",
+  "tools": 6,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "orshot.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "paytech.events",
+  "tools": 6,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "pkm.hayalows.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "plumberhelp.ca",
+  "tools": 6,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "readmbox.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "sbox.watch",
+  "tools": 6,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "sentry.io",
+  "tools": 6,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "septichelp.ca",
+  "tools": 6,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "shipreal.dev",
+  "tools": 6,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "sylviezechner.cz",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "undocs.unjs.io",
+  "tools": 6,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "watchanchor.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "webmcp.ro",
+  "tools": 6,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "westerncontainersales.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "zernio.com",
+  "tools": 6,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "zkxp.xyz",
+  "tools": 6,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "2d-webmcp.netlify.app",
+  "tools": 6,
+  "status": "demo",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "200main.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "abierto.us",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "aeon.fun",
+  "tools": 5,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "agagentready.com",
+  "tools": 5,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "aidan.buzz",
+  "tools": 5,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "allredhotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "allseasonsuites.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "armendaris.tedturnerreserves.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "astrahotelseattle.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "beaufortinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "betteroff.finance",
+  "tools": 5,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "bristolhotelva.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "brownhotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "bulktranscripts.co",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "callforpaper.org",
+  "tools": 5,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "camjam.co.nz",
+  "tools": 5,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "cariberoyale.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "casamonica.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "catchlight.app",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "chestnutinnoquagalake.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "chicagocitysuites.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "chillcodelabs.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "couples.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "delamar.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "deveserisso.com.br",
+  "tools": 5,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "diamondheadfl.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "downtowngrand.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "eduardocruz.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "elements-collection.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "elliotthouseinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "ellomind.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "emeraldgrande.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "emosapien.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "esdeveniments.cat",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "eurosys.pt",
+  "tools": 5,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "exagard.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "fqicharleston.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "gexlog.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "glenstonelodge.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "grandmaloneyhotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "granvilleinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "graysonhotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "gullwingfl.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hagens.com.br",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "halfmilefarm.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hallmarkinns.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hallmarkresortcannonbeach.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hallmarkresortnewport.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "handback.link",
+  "tools": 5,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "harbourviewcharleston.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "heffl.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "hi-lo-hotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hipcall.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "hotelanthracite.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelbethlehem.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelduval.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelelkhart.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelflorasantafe.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelmarcel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelone75.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelrumbaosanjuan.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelverdant.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelversaillesohio.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelvespergalleria.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hotelwestandmain.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "image-color-changer.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "indigoinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "innat500.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "innat5th.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "innataspen.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "innatcarnallhall.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "innatcolgate.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "innatpatricksquare.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "islandvista.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "ivyhotelchicago.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "jasminehousecharleston.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "jcresorts.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "kinleychattanooga.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "kinleycincinnati.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "knowngate.com",
+  "tools": 5,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "ladder.tedturnerreserves.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "lakenonawavehotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "latitude.so",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "learn.chatgpt.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "ledgeshotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "liftbridgelodge.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "llms-text.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "lockwood-hotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "loganinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "lottehotelseattle.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "lottenypalace.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "lotushonoluluhotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "loverskey.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "majestic-chicago.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "marketintell.ai",
+  "tools": 5,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "match-ai.nl",
+  "tools": 5,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "mauricioperera.github.io",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "mcptoplist.com",
+  "tools": 5,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "meetingstreetinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "mitosislabs.ai",
+  "tools": 5,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "mountainlodgetelluride.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "namefi.io",
+  "tools": 5,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "naplesgrande.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "norbelys.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "northeastdealintel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "nz365guy.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "oceanedge.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "ojaivalleyinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "oldedwardshospitality.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "oldedwardsinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "olympus-mcp-harness.vercel.app",
+  "tools": 5,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "oxfordcollection.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "palmscharleston.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "piersixtysix.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "planethollywoodhotels.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "plori.ai",
+  "tools": 5,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "pointeestero.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "privadovillas.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "pueblobonito.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "pueblobonito.com.mx",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "qentrax.io",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "quirkhotels.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "ranchobernardoinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "redjacketresorts.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "reunionresort.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "rivethouse.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "roundhill.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "royaltonresorts.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "runtype.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "sandylane.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "sayremansion.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "scottsdaleprincess.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "scribe.buzz",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "seasideinniop.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "settlershospitality.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "shemcreekinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "sierragrande.tedturnerreserves.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "silverbirchesresortpa.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "silversandscollection.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "simplybe.co.uk",
+  "tools": 5,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "sonoma.ventures",
+  "tools": 5,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "spiceislandbeachresort.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "spreadfront.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "stacktr.ee",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "status.networkthinking.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "staykanuga.org",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "staynownow.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "storkscout.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "surfandsandresort.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "surfsideoceanfronthotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "talogen.dev",
+  "tools": 5,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "tedturnerreserves.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "theabernathy.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thealbionhotels.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thechifleyhouston.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thecollectorinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thedarlingvisalia.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thedeerpathinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thedelphihotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thedorianhotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "theedwinhotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thegradyhotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thegraysonmiami.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thehhotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thehotelmaverick.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "theinnatelon.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "theinnatnewportranch.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "theloutrel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thememphian.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thepalmshotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thepierreny.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thesetaihotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thesettlersinn.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thespectatorhotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "thestavrand.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "timbertracecrafts.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "vercel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "vermejo.tedturnerreserves.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "vetofish.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "villageinnandpub.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "waynesvilleinnandgolf.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "weave-webmcp.vercel.app",
+  "tools": 5,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "wildriceretreat.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "willowshotelchicago.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "withallo.com",
+  "tools": 5,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "wodira.app",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "wyliehotel.com",
+  "tools": 5,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "0gis0.github.io",
+  "tools": 5,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "crossword-desk-studio.openai.chatgpt.site",
+  "tools": 5,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "elcaro.netlify.app",
+  "tools": 5,
+  "status": "demo",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "microduck.muretai.com",
+  "tools": 5,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "sport-shop-angular",
+  "tools": 5,
+  "status": "demo",
+  "category": "Commerce"
+ },
+ {
+  "site": "2022.cat",
+  "tools": 4,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "airportloungelist.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "amicited.com",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "arbatov.dev",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "aspectprinting.co.uk",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "astronomer.io",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "b150.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "blitzreels.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "casabitare.it",
+  "tools": 4,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "clearlist.me",
+  "tools": 4,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "cloverbase.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "dmarc.networkthinking.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "esimc.top",
+  "tools": 4,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "everaw.in",
+  "tools": 4,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "every.to",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "flightqueue.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "foundersprime.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "fume.finance",
+  "tools": 4,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "gatien.dev",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "geosurge.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "getaiso.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "giantmarkdown.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "gla.ac.uk",
+  "tools": 4,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "goai.ro",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "hayalows.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "heat-pumps.co",
+  "tools": 4,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "heroleague.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "hopi.co.uk",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "iammatthias.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "idomkt.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "jarrettstanley.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "jobspipe.dev",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "knock.app",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "kujolang.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "llmbase.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "lumbox.co",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "madrid-day-spa.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "marketresearchfuture.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "match-day.nl",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "matchclaws.xyz",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "medtests-webmcp-preview.carpal-cilantro.workers.dev",
+  "tools": 4,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "medtests.de",
+  "tools": 4,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "modelrunner.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "naczarter.pl",
+  "tools": 4,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "names.co.uk",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "nekuda.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "node8.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "nohacks.co",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "outbig.bid",
+  "tools": 4,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "outside-the-box.dev",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "peppolvalidator.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "pyrra.net",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "radar.markreadfintech.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "rafeblandford.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "returngis.net",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "satsuma.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "seedthink.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "simple-affiliate.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "skillbay.sh",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "sneogi.dev",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "solop.ir",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "speedof.me",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "sponsio-web.vercel.app",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "startuparchive.io",
+  "tools": 4,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "submoapp.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "surendranb.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "switchai.it",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "takelet.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "thanks2go.securedme.ca",
+  "tools": 4,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "tokenwatch.wyrdwerk.com",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "tramitapp.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "trolleyscout.co.za",
+  "tools": 4,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "tubealfred.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "unifapi.com",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "usemyresearch.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "usercentrics.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "vespper.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "videokurs.pl",
+  "tools": 4,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "vorim.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "waitspin.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "webmcp.flightsweeper.com",
+  "tools": 4,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "webmcp.patronus.studio",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "webscore.now",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "xseek.io",
+  "tools": 4,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "yonyon.ai",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "yutori.com",
+  "tools": 4,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "zechner.cz",
+  "tools": 4,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "coffee-shop",
+  "tools": 4,
+  "status": "demo",
+  "category": "Commerce"
+ },
+ {
+  "site": "real-estate-map",
+  "tools": 4,
+  "status": "demo",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "webmcp.sh",
+  "tools": 4,
+  "status": "demo",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "21st.dev",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "aakashpharmacy.zeenovo.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "abahanavillas.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "agent-ready.dev",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "agentline.cloud",
+  "tools": 3,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "agentswitchboard.dev",
+  "tools": 3,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "airbyte.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "antequera.click",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "armorathletics.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "betomuniz.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "blindpay.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "charm.ing",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "clashofcoins.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "clunk.repair",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "consentik.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "cookiebot.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "corewebvitals.io",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "cruasan.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "customer.io",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "decisionsupportnetwork.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "deepsearch.app",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "desk.bu.finance",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "doana.ca",
+  "tools": 3,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "docs.mcp-b.ai",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "dotby.app",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "eurodz.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "fenod.fr",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "fly.io",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "formswrite.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "get-flowie.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "go-orca.tech",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "gptcode.dev",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "guruwalk.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "hvachelp.co",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "isthisaigenerated.app",
+  "tools": 3,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "itseasy.co",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "jonhulsinger.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "julditec.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "kanverse-borrow.kanthrfp.workers.dev",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "kinro.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "konstantinos.top",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "krawl.sh",
+  "tools": 3,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "kulikowski.me",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "lazyweb.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "mentimeter.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "mohlondon.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "moss.dev",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "mytopfive.app",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "negativeev.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "north28.studio",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "nufcblog.co.uk",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "okcluxuryhomeplanner.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "perini-financeandproperty.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "poppykidsdental.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "promptlens.io",
+  "tools": 3,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "proxy-compare.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "publica.now",
+  "tools": 3,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "quarante-trois.fr",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "robertkubis.pl",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "rrmacademy.org",
+  "tools": 3,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "runcopycat.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "sap-ai-skills.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "settledestate.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "sigiro.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "speakai.co",
+  "tools": 3,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "spoken.md",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "swansonking.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "tatum.io",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "thataicollection.com",
+  "tools": 3,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "therapyworld.org",
+  "tools": 3,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "thoughtbulb.dev",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "turva.dev",
+  "tools": 3,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "twinoakswestcf.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "useblume.dev",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "v-sum.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "vneconomy.vn",
+  "tools": 3,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "webmindltd.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "webperf-snippets.nucliweb.net",
+  "tools": 3,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "zephior.com",
+  "tools": 3,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "doors",
+  "tools": 3,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "fondof.netlify.app",
+  "tools": 3,
+  "status": "demo",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "hotel-chain",
+  "tools": 3,
+  "status": "demo",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "incident-command-jet.vercel.app",
+  "tools": 3,
+  "status": "demo",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "leather-bag",
+  "tools": 3,
+  "status": "demo",
+  "category": "Commerce"
+ },
+ {
+  "site": "prestashop.justidea.dev",
+  "tools": 3,
+  "status": "demo",
+  "category": "Commerce"
+ },
+ {
+  "site": "ticket-booking",
+  "tools": 3,
+  "status": "demo",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "webmcp-blackjack.heejae.dev",
+  "tools": 3,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "webmcp-starter.netlify.app",
+  "tools": 3,
+  "status": "demo",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "academyux.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "addictioncenter.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "aiagent.app",
+  "tools": 2,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "akashgpt.me",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "anchoredhopeindex.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "apis.io",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "atyours.ca",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "aupfinanzservice.eu",
+  "tools": 2,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "avivita.co.il",
+  "tools": 2,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "bema.jpamorgan.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "billshultz.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "blink-borrow-bridge.kanthrfp.workers.dev",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "canairecommendmybusiness.com",
+  "tools": 2,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "chapa.thecreativetoken.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "chavesnamao.com.br",
+  "tools": 2,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "checklyhq.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "cosine.club",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "cowgorach.pl",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "dailybot.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "danang.kim",
+  "tools": 2,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "dedaluslabs.ai",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "developers.cloudflare.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "docs.browseros.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "docs.dify.ai",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "docs.fish.audio",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "docs.z.ai",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "doodleai.art",
+  "tools": 2,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "e-advertising.ro",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "esimtabby.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "exa.ai",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "flightseatmap.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "floxis.tech",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "flyweel.co",
+  "tools": 2,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "getapril.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "gofastmcp.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "hiro.is",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "homemoneyfinder.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "honcho.dev",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "hostinger.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "icons-for-agents.site",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "immersivecommons.com",
+  "tools": 2,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "inference-docs.cerebras.ai",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "inkle.ai",
+  "tools": 2,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "isainative.dev",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "jajiga.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "jarraga.dev",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "jim.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "kakeklar.no",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "kanverse-proofstamp-relay.kanthrfp.workers.dev",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "labstudio.tech",
+  "tools": 2,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "marketing-tools.info",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "mydentify.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "navattic.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "perini.es",
+  "tools": 2,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "pieverse.io",
+  "tools": 2,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "pixelvault.dev",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "placeholders.dev",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "primitive.dev",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "puzl.no",
+  "tools": 2,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "rcv.properties",
+  "tools": 2,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "redpim.de",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "restoo.mintlify.app",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "ricmac.org",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "samva.dev",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "scry.io",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "sentient-ui.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "symbaiex.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "team.management",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "timmcmahon.com.au",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "topograph.co",
+  "tools": 2,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "valquere.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "vellum.ai",
+  "tools": 2,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "worldmonitor.app",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "xn--sdeckie-p4a.pl",
+  "tools": 2,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "xquik.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "zuplo.com",
+  "tools": 2,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "488315.github.io",
+  "tools": 2,
+  "status": "demo",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "cubecade.openai.chatgpt.site",
+  "tools": 2,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "1000xdev.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "1claw.xyz",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "adjudica.cl",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "agent-to-agent-commerce.de",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "agentcommunity.org",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "agentready.market",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "allsvgicons.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "alorica.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "altercrafts.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "archytasdigital.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "audit.wordlift.io",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "belezanaweb.com.br",
+  "tools": 1,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "builtwith.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "bydhruvil.in",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "cache-boost.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "caldogbiteevidence.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "catalog.busleyden.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "codaquest.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "coinvela.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "consultoriaagricolaintegral.es",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "context.dev",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "crazyegg.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "crispy-web.shop",
+  "tools": 1,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "devbrothers.ai",
+  "tools": 1,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "dri.es",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "dupe.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "ellelion.com",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "elswythsteel.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Commerce"
+ },
+ {
+  "site": "existentialotter.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "fingerprint.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "fr.mappy.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "friendlyguid.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "galantidigital.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "gecko.security",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "getcargo.io",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "getlago.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "getscaled.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "glama.ai",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "grantreadinesschecklist.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "guardacrosstraining.pt",
+  "tools": 1,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "housecallpro.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "ialwaysforget.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "inboxguard.io",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "isitagentready.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "lagazzettadelmezzogiorno.it",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "leotsem.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "linkedmash.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "lirn.net",
+  "tools": 1,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "magicbrain.es",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "naia.today",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "notte.cc",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "okcsciaticacheck.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "podcast.lugassy.net",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "portalmuzyczny.pl",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "profitwhisperers.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "puppyone.ai",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "qcg.securedme.ca",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "razorpay.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "reapi.ai",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "reelmaker.inhobot.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "reflex.dev",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "rigsbywoldholidaycottages.uk",
+  "tools": 1,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "salespeak.ai",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "sardrobe.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "sealgate.ai",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "siblingssoftware.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "sigvelo.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "site.pro",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "solarquoteanalyzer.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "soschecklist.net",
+  "tools": 1,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "spectrumtours.cz",
+  "tools": 1,
+  "status": "live",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "spotter.amitvaria.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Health & Education"
+ },
+ {
+  "site": "sudhanva.me",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "tamethebots.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "tansohq.com",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "taxsaleatlas.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Finance & Crypto"
+ },
+ {
+  "site": "tesla-daily.lugassy.net",
+  "tools": 1,
+  "status": "live",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "wachter.ai",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "waniwani.ai",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "web-ai-sdk.dev",
+  "tools": 1,
+  "status": "live",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "webmcp.ora.ai",
+  "tools": 1,
+  "status": "live",
+  "category": "AI & Agents"
+ },
+ {
+  "site": "yaptask.com",
+  "tools": 1,
+  "status": "live",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "analytics-dashboard",
+  "tools": 1,
+  "status": "demo",
+  "category": "Developer Tools"
+ },
+ {
+  "site": "catalyst-digital-nz.webflow.io",
+  "tools": 1,
+  "status": "demo",
+  "category": "Productivity & Business"
+ },
+ {
+  "site": "french-bistro",
+  "tools": 1,
+  "status": "demo",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "order-tracking",
+  "tools": 1,
+  "status": "demo",
+  "category": "Commerce"
+ },
+ {
+  "site": "react-flightsearch",
+  "tools": 1,
+  "status": "demo",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "smart-home",
+  "tools": 1,
+  "status": "demo",
+  "category": "Media & Personal"
+ },
+ {
+  "site": "webmcp-flight-demo",
+  "tools": 1,
+  "status": "demo",
+  "category": "Travel & Events"
+ },
+ {
+  "site": "webmcp-maze",
+  "tools": 1,
+  "status": "demo",
+  "category": "Media & Personal"
+ }
+]

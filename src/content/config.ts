@@ -16,9 +16,23 @@ const postsCollection = defineCollection({
     heroImage: z.string().optional(),
     tags: z.array(z.string()).default([]),
     sources: z.array(z.string()).default([]),
+    pattern: z.string().optional(), // slug of the related pattern page
+  }),
+});
+
+// A pattern is one thing that stops agents (kind: anti) or one thing that lets them through (kind: good).
+const patternsCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    kind: z.enum(['anti', 'good']),
+    summary: z.string(), // one sentence: what occurs
+    wallTag: z.string(), // the label used on /wall; the count and link come from there
+    order: z.number().default(99),
   }),
 });
 
 export const collections = {
   posts: postsCollection,
+  patterns: patternsCollection,
 };

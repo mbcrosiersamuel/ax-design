@@ -1,0 +1,173 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import wallData from '../../data/wall.json';
+import { countPattern, type WallItem } from '@lib/wall';
+
+export const getStaticPaths = (async () => {
+  const patterns = await getCollection('patterns');
+  return patterns.map((pattern) => ({ params: { slug: pattern.slug }, props: { pattern } }));
+}) satisfies GetStaticPaths;
+
+const { pattern } = Astro.props;
+const { Content } = await pattern.render();
+const posts = (await getCollection('posts')).filter((p) => p.data.pattern === pattern.slug);
+const items = wallData as unknown as WallItem[];
+const today = new Date().toISOString().slice(0, 10);
+const kind = pattern.data.kind;
+const n = countPattern(items, kind, pattern.data.wallTag, today);
+const wallHref = `/wall?pattern=${encodeURIComponent(`${kind}:${pattern.data.wallTag}`)}`;
+---
+
+<BaseLayout title={`${pattern.data.title} | agentexperience.design`} description={pattern.data.summary}>
+  <article class="pattern">
+    <div class="container">
+      <header class="pattern__header">
+        <h1><span class={`m m--${kind}`} aria-hidden="true">{kind === 'anti' ? '✕' : '✓'}</span>{pattern.data.title}</h1>
+        <p class="summary">{pattern.data.summary}</p>
+        {n > 0 && <p class="meta"><a href={wallHref}>{n} posts in the last 30 days</a></p>}
+      </header>
+
+      <div class="prose pattern__body">
+        <Content />
+      </div>
+
+      {posts.length > 0 && (
+        <aside class="related">
+          <h2>In the gallery</h2>
+          <ul>
+            {posts.map((p) => (
+              <li><a href={`/gallery/${p.slug}`}>{p.data.companies.map((c) => c.name).join(', ')}: {p.data.title}</a></li>
+            ))}
+          </ul>
+        </aside>
+      )}
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .pattern {
+    padding-block: var(--space-8) var(--space-16);
+  }
+
+  .pattern__header {
+    padding-bottom: var(--space-6);
+    border-bottom: 2px solid var(--color-text);
+    margin-bottom: var(--space-8);
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-3);
+  }
+
+  .m {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    flex: none;
+  }
+
+  .m--anti {
+    color: var(--color-bad);
+    background: var(--color-bad-bg);
+  }
+
+  .m--good {
+    color: var(--color-good);
+    background: var(--color-good-bg);
+  }
+
+  .summary {
+    font-size: var(--text-lg);
+    line-height: var(--line-normal);
+  }
+
+  .meta {
+    margin-top: var(--space-3);
+    font-size: var(--text-sm);
+    font-family: var(--font-mono);
+  }
+
+  .meta a {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .pattern__body :global(h2) {
+    font-size: var(--text-xl);
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-3);
+  }
+
+  .pattern__body :global(p),
+  .pattern__body :global(li) {
+    line-height: var(--line-relaxed);
+  }
+
+  .pattern__body :global(p + p),
+  .pattern__body :global(ul),
+  .pattern__body :global(ol) {
+    margin-top: var(--space-3);
+  }
+
+  .pattern__body :global(ul),
+  .pattern__body :global(ol) {
+    padding-left: var(--space-5);
+  }
+
+  .pattern__body :global(blockquote) {
+    margin-block: var(--space-4);
+    padding-left: var(--space-4);
+    border-left: 2px solid var(--color-border);
+  }
+
+  .pattern__body :global(blockquote p) {
+    font-size: var(--text-lg);
+  }
+
+  .pattern__body :global(blockquote p:last-child) {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin-top: var(--space-1);
+  }
+
+  .pattern__body :global(code) {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+  }
+
+  .related {
+    margin-top: var(--space-10);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .related h2 {
+    font-size: var(--text-base);
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+  }
+
+  .related ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .related a {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

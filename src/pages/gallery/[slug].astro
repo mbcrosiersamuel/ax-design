@@ -15,11 +15,13 @@ export const getStaticPaths = (async () => {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+const pattern = post.data.pattern ? (await getCollection('patterns')).find((p) => p.slug === post.data.pattern) : undefined;
 
 const formattedDate = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
   month: 'long',
-  day: 'numeric'
+  day: 'numeric',
+  timeZone: 'UTC'
 }).format(post.data.date);
 
 // Get the raw markdown content
@@ -45,14 +47,11 @@ const getLogoUrl = (logoPath?: string) => {
         <!-- Header -->
         <header class="post__header">
           <div class="post__meta">
-            <span class:list={['post__badge', `post__badge--${post.data.verdict}`]}>
-              {post.data.verdict === 'good' ? 'Good AX' : 'AX Example'}
-            </span>
             <time class="post__date" datetime={post.data.date.toISOString()}>
               {formattedDate}
             </time>
             <Button variant="ghost" size="sm" class="copy-markdown-btn" data-copy-markdown>
-              📋 Copy as Markdown
+              Copy as Markdown
             </Button>
           </div>
 
@@ -73,13 +72,6 @@ const getLogoUrl = (logoPath?: string) => {
           </div>
           <p class="post__summary">{post.data.summary}</p>
 
-          {post.data.tags.length > 0 && (
-            <div class="post__tags">
-              {post.data.tags.map((tag) => (
-                <span class="post__tag">{tag}</span>
-              ))}
-            </div>
-          )}
         </header>
 
         <!-- Hidden markdown content for copying -->
@@ -113,7 +105,7 @@ ${markdownContent}`}</pre>
         <!-- Sources -->
         {post.data.sources.length > 0 && (
           <aside class="post__sources">
-            <h3>Sources & References</h3>
+            <h3>Sources</h3>
             <ul>
               {post.data.sources.map((source) => (
                 <li>
@@ -126,12 +118,9 @@ ${markdownContent}`}</pre>
           </aside>
         )}
 
-        <!-- Actions -->
-        <div class="post__actions">
-          <Button variant="secondary" href="/gallery">
-            ← Back to Gallery
-          </Button>
-        </div>
+        {pattern && (
+          <p class="post__pattern">Pattern: <a href={`/patterns/${pattern.slug}`}>{pattern.data.title}</a></p>
+        )}
       </div>
     </div>
   </article>
@@ -142,10 +131,6 @@ ${markdownContent}`}</pre>
     padding: var(--space-16) 0;
   }
 
-  .post__content {
-    max-width: var(--content-width);
-    margin: 0 auto;
-  }
 
   .post__header {
     margin-bottom: var(--space-12);
@@ -163,35 +148,14 @@ ${markdownContent}`}</pre>
     margin-left: auto;
   }
 
-  .post__badge {
-    display: inline-flex;
-    align-items: center;
-    padding: var(--space-2) var(--space-4);
-    font-size: var(--text-sm);
-    font-weight: 600;
-    border-radius: var(--radius-full);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .post__badge--good {
-    background: var(--color-good-bg);
-    color: var(--color-good);
-  }
-
-  .post__badge--bad {
-    background: var(--color-bad-bg);
-    color: var(--color-bad);
-  }
-
   .post__date {
     font-size: var(--text-sm);
     color: var(--color-text-muted);
   }
 
   .post__title {
-    font-size: var(--text-5xl);
-    margin-bottom: var(--space-4);
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-3);
     line-height: var(--line-tight);
   }
 
@@ -229,22 +193,6 @@ ${markdownContent}`}</pre>
     color: var(--color-text);
   }
 
-  .post__tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-    margin-top: var(--space-6);
-  }
-
-  .post__tag {
-    font-size: var(--text-sm);
-    padding: var(--space-2) var(--space-3);
-    background: var(--color-bg-subtle);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    color: var(--color-text-muted);
-  }
-
   .post__hero {
     margin-bottom: var(--space-12);
     border-radius: var(--radius-lg);
@@ -269,8 +217,9 @@ ${markdownContent}`}</pre>
   }
 
   .prose :global(h2) {
-    margin-top: var(--space-12);
-    margin-bottom: var(--space-4);
+    font-size: var(--text-xl);
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-3);
   }
 
   .prose :global(h3) {
@@ -297,24 +246,28 @@ ${markdownContent}`}</pre>
   }
 
   .prose :global(blockquote) {
-    border-left: 4px solid var(--color-accent);
-    padding-left: var(--space-6);
-    margin: var(--space-6) 0;
-    font-style: italic;
+    border-left: 2px solid var(--color-border);
+    padding-left: var(--space-4);
+    margin: var(--space-4) 0;
+  }
+
+  .prose :global(blockquote p:last-child) {
+    font-size: var(--text-sm);
     color: var(--color-text-muted);
   }
 
   .post__sources {
-    padding: var(--space-6);
-    background: var(--color-bg-subtle);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    margin-bottom: var(--space-12);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
   }
 
   .post__sources h3 {
-    font-size: var(--text-lg);
-    margin-bottom: var(--space-4);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2);
   }
 
   .post__sources ul {
@@ -334,14 +287,6 @@ ${markdownContent}`}</pre>
 
   .post__sources a:hover {
     color: var(--color-text);
-  }
-
-  .post__actions {
-    display: flex;
-    gap: var(--space-4);
-    flex-wrap: wrap;
-    padding-top: var(--space-8);
-    border-top: 1px solid var(--color-border);
   }
 
   @media (max-width: 768px) {
@@ -365,6 +310,17 @@ ${markdownContent}`}</pre>
     .post__actions {
       flex-direction: column;
     }
+  }
+  .post__pattern {
+    margin-top: var(--space-8);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .post__pattern a {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 </style>
 

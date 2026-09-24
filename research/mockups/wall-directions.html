@@ -1,0 +1,319 @@
+<title>Wall Directions</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&family=Archivo:wdth,wght@62..125,400;62..125,500;62..125,700;62..125,900&display=swap">
+<style>
+  :root {
+    --bg: #ffffff; --ink: #111111; --mute: #6b6b6b; --line: #d9d9d9; --soft: #f3f3f1;
+    --ok: #1a7f3c; --ok-bg: #e9f5ec; --no: #c8321f; --no-bg: #fbeae7;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #121212; --ink: #f2f2f2; --mute: #a0a0a0; --line: #2e2e2e; --soft: #1c1c1c; --ok: #4fca77; --ok-bg: #16311f; --no: #ff7a66; --no-bg: #3a1a15; }
+  }
+  :root[data-theme="dark"] { --bg: #121212; --ink: #f2f2f2; --mute: #a0a0a0; --line: #2e2e2e; --soft: #1c1c1c; --ok: #4fca77; --ok-bg: #16311f; --no: #ff7a66; --no-bg: #3a1a15; }
+
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font: 15px/1.5 "Instrument Sans", system-ui, sans-serif; padding: 0 16px 64px; }
+  a { color: inherit; }
+  .page { max-width: 1240px; margin: 0 auto; }
+
+  /* ---- mockup chrome (not part of the designs) ---- */
+  .intro { padding-block: 28px 16px; display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: baseline; border-bottom: 1px solid var(--line); }
+  .intro h1 { font-size: 20px; font-weight: 600; }
+  .intro p { color: var(--mute); }
+  .jump { display: flex; gap: 6px; margin-left: auto; }
+  .jump a { text-decoration: none; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; }
+  .dir { padding-block: 40px; border-bottom: 1px solid var(--line); }
+  .dir > header { display: grid; grid-template-columns: 1fr; gap: 6px; margin-bottom: 20px; }
+  .dir > header h2 { font-size: 26px; font-weight: 600; letter-spacing: -0.01em; }
+  .dir > header p { color: var(--mute); }
+  .dir > header dl { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 13px; color: var(--mute); margin-top: 4px; }
+  .dir > header dt { display: inline; font-weight: 600; color: var(--ink); }
+  .dir > header dd { display: inline; }
+  .frames { display: grid; grid-template-columns: minmax(0, 1fr) 392px; gap: 24px; align-items: start; }
+  .frame { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; container-type: inline-size; background: var(--bg); }
+  .frame--phone { width: 392px; max-width: 100%; }
+  .frame__bar { font-size: 11px; color: var(--mute); padding: 6px 12px; border-bottom: 1px solid var(--line); background: var(--soft); letter-spacing: 0.04em; text-transform: uppercase; }
+  @media (max-width: 900px) { .frames { grid-template-columns: 1fr; } .frame--phone { justify-self: start; } }
+
+  /* ---- shared marks ---- */
+  .m { display: inline-flex; align-items: center; justify-content: center; width: 1.25em; height: 1.25em; border-radius: 999px; font-size: 0.85em; font-weight: 700; flex: none; }
+  .m-ok { color: var(--ok); background: var(--ok-bg); }
+  .m-no { color: var(--no); background: var(--no-bg); }
+  .m-mx { color: var(--mute); background: var(--soft); }
+  .embed { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: var(--bg); }
+  .embed__who { display: flex; align-items: center; gap: 8px; font-size: 13px; margin-bottom: 6px; }
+  .embed__av { width: 28px; height: 28px; border-radius: 999px; background: var(--soft); flex: none; }
+  .embed__who b { font-weight: 600; }
+  .embed__who span { color: var(--mute); }
+  .embed__x { margin-left: auto; font-weight: 700; font-size: 15px; }
+  .embed__r { margin-left: auto; color: #ff4500; font-weight: 700; font-size: 12px; }
+  .embed p { font-size: 15px; line-height: 1.4; }
+  .embed__foot { color: var(--mute); font-size: 12px; margin-top: 8px; }
+
+  /* ======================= A. LEDGER ======================= */
+  .A { font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 14px; }
+  .A .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .A .nav { display: flex; align-items: center; gap: 18px; padding: 10px 16px; border-bottom: 1px solid var(--line); font-weight: 500; }
+  .A .nav .brand { font-family: "IBM Plex Mono", monospace; font-weight: 500; margin-right: auto; }
+  .A .nav a { text-decoration: none; color: var(--mute); }
+  .A .nav a[aria-current] { color: var(--ink); border-bottom: 2px solid var(--ink); }
+  .A .bar { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 10px 16px; border-bottom: 1px solid var(--line); font-size: 13px; align-items: center; }
+  .A .bar .sel { border: 0; border-bottom: 1px dashed var(--mute); background: none; font: inherit; color: var(--ink); padding: 2px 0; }
+  .A .bar .tog { display: inline-flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+  .A .bar .tog span { padding: 3px 9px; }
+  .A .bar .tog span[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .A .bar .n { margin-left: auto; color: var(--mute); }
+  .A table { width: 100%; border-collapse: collapse; }
+  .A th { text-align: left; font-weight: 500; color: var(--mute); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 16px; border-bottom: 1px solid var(--line); }
+  .A td { padding: 10px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .A td.site { font-weight: 600; white-space: nowrap; }
+  .A td.tally { white-space: nowrap; }
+  .A .dots { letter-spacing: 1px; }
+  .A .dots i { font-style: normal; display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 2px; vertical-align: middle; }
+  .A .dots .ok { background: var(--ok); } .A .dots .no { background: var(--no); } .A .dots .mx { background: var(--line); }
+  .A td.q { color: var(--ink); }
+  .A td.q small { color: var(--mute); display: block; margin-top: 2px; }
+  .A tr.sub td { background: var(--soft); padding-block: 14px; }
+  .A tr.sub .embeds { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  @container (max-width: 500px) {
+    .A th:nth-child(3), .A td:nth-child(3) { display: none; }
+    .A td { padding: 10px 12px; }
+    .A .nav, .A .bar { padding-inline: 12px; }
+    .A td.q { font-size: 13px; }
+  }
+
+  /* ======================= B. FEED ======================= */
+  .B { font-family: "Instrument Sans", system-ui, sans-serif; }
+  .B .top { position: sticky; top: 0; background: var(--bg); padding: 12px 16px 0; }
+  .B .tabs { display: flex; gap: 22px; font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+  .B .tabs a { text-decoration: none; color: var(--mute); padding-bottom: 8px; }
+  .B .tabs a[aria-current] { color: var(--ink); border-bottom: 3px solid var(--ink); }
+  .B .chips { display: flex; gap: 8px; overflow-x: auto; padding: 12px 0 12px; scrollbar-width: none; border-bottom: 1px solid var(--line); }
+  .B .chips::-webkit-scrollbar { display: none; }
+  .B .chip { flex: none; border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: 14px; font-weight: 500; white-space: nowrap; display: inline-flex; gap: 6px; align-items: center; }
+  .B .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .B .feed { max-width: 600px; margin: 0 auto; padding: 8px 16px 24px; display: flex; flex-direction: column; }
+  .B .item { padding-block: 18px; border-bottom: 1px solid var(--line); }
+  .B .item__head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .B .item__site { font-weight: 700; font-size: 17px; letter-spacing: -0.01em; }
+  .B .item__agent { color: var(--mute); font-size: 14px; }
+  .B .item__age { margin-left: auto; color: var(--mute); font-size: 13px; }
+  .B .item__tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+  .B .tag { font-size: 12px; font-weight: 500; padding: 3px 9px; border-radius: 999px; background: var(--soft); }
+  .B .rank { max-width: 600px; margin: 0 auto; padding: 8px 16px; }
+  .B .rank li { list-style: none; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding-block: 14px; border-bottom: 1px solid var(--line); align-items: center; }
+  .B .rank .s { font-weight: 700; font-size: 17px; }
+  .B .rank .meter { grid-column: 1 / -1; height: 6px; border-radius: 3px; background: var(--no-bg); overflow: hidden; }
+  .B .rank .meter i { display: block; height: 100%; background: var(--ok); }
+  .B .rank .t { font-variant-numeric: tabular-nums; font-size: 14px; display: inline-flex; gap: 10px; }
+  .B .side { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+  @container (max-width: 700px) { .B .side { grid-template-columns: 1fr; } .B .side > :last-child { display: none; } }
+
+  /* ======================= C. SCOREBOARD ======================= */
+  .C { font-family: "Archivo", system-ui, sans-serif; }
+  .C .head { display: flex; align-items: baseline; gap: 16px; padding: 14px 20px 0; }
+  .C .head .brand { font-weight: 900; font-stretch: 125%; letter-spacing: -0.02em; font-size: 15px; text-transform: uppercase; }
+  .C .head .seg { margin-left: auto; display: flex; border: 2px solid var(--ink); border-radius: 999px; overflow: hidden; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+  .C .head .seg span { padding: 5px 14px; }
+  .C .head .seg span[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .C .hero { padding: 26px 20px 18px; display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: end; border-bottom: 2px solid var(--ink); }
+  .C .big { font-size: clamp(56px, 14cqw, 128px); line-height: 0.9; font-weight: 900; font-stretch: 62%; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .C .big small { font-size: 0.35em; font-stretch: 100%; font-weight: 700; color: var(--mute); letter-spacing: 0; }
+  .C .hero p { font-size: 14px; color: var(--mute); max-width: 32ch; line-height: 1.35; }
+  .C .board { list-style: none; }
+  .C .row { display: grid; grid-template-columns: 52px 1fr auto; gap: 0 16px; align-items: center; padding: 12px 20px; border-bottom: 1px solid var(--line); }
+  .C .row .pct { font-size: 30px; font-weight: 900; font-stretch: 75%; font-variant-numeric: tabular-nums; line-height: 1; }
+  .C .row .pct.good { color: var(--ok); } .C .row .pct.bad { color: var(--no); }
+  .C .row .site { font-weight: 700; font-size: 18px; letter-spacing: -0.01em; }
+  .C .row .why { font-size: 13px; color: var(--mute); font-stretch: 90%; }
+  .C .row .n { font-size: 13px; color: var(--mute); font-variant-numeric: tabular-nums; text-align: right; font-stretch: 90%; }
+  .C .row.open { background: var(--soft); border-bottom: 0; }
+  .C .detail { background: var(--soft); padding: 4px 20px 20px; border-bottom: 1px solid var(--line); }
+  .C .detail .embeds { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .C .detail .embed { position: relative; }
+  .C .detail .embed .m { position: absolute; top: 12px; right: 12px; }
+  .C .detail .embed .embed__x, .C .detail .embed .embed__r { margin-right: 28px; }
+  .C .foot { padding: 12px 20px; font-size: 12px; color: var(--mute); font-stretch: 90%; }
+  @container (max-width: 500px) { .C .row { grid-template-columns: 44px 1fr; } .C .row .n { display: none; } .C .row .pct { font-size: 24px; } .C .row .site { font-size: 16px; } .C .hero, .C .row, .C .detail, .C .head, .C .foot { padding-inline: 14px; } }
+</style>
+
+<div class="page">
+  <div class="intro">
+    <h1>Wall directions</h1>
+    <p>Three ways to show the same data. Numbers and posts are real. Posts older than 30 days are hidden or marked in all three.</p>
+    <nav class="jump"><a href="#a">A</a><a href="#b">B</a><a href="#c">C</a></nav>
+  </div>
+
+  <!-- =========================================================== A -->
+  <section class="dir" id="a">
+    <header>
+      <h2>A. Ledger</h2>
+      <p>One table. Sites are rows, the last 30 days are a strip of squares, and a row opens to show its posts. Posts and benchmark are the same screen. Smallest number of words of the three.</p>
+      <dl><dt>Font</dt><dd>IBM Plex Sans, IBM Plex Mono for numbers</dd> <dt>Mobile</dt><dd>the quote column drops, the strip stays</dd> <dt>Risk</dt><dd>reads as a tool, not a gallery</dd></dl>
+    </header>
+    <div class="frames">
+      <div class="frame A">
+        <div class="frame__bar">Desktop</div>
+        <div class="nav"><span class="brand">agentexperience.design</span><a href="#a" aria-current="page">Wall</a><a href="#a">Gallery</a><a href="#a">About</a></div>
+        <div class="bar">
+          <span class="tog"><span aria-pressed="true">30 days</span><span>All</span></span>
+          <select class="sel" aria-label="Assistant"><option>Any assistant</option></select>
+          <select class="sel" aria-label="Pattern"><option>Any pattern</option></select>
+          <span class="n mono">12 sites · 63 posts</span>
+        </div>
+        <table>
+          <thead><tr><th>Site</th><th>30 days</th><th>Latest</th></tr></thead>
+          <tbody>
+            <tr><td class="site">amazon.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="mx"></i><i class="mx"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i></span> 8–6</td><td class="q">“Amazon worked fine. Walmart blocked it with a bot blocker.”<small>@evrgn11112231 · Muse · 2d</small></td></tr>
+            <tr class="open"><td class="site">delta.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="ok"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i></span> 2–6</td><td class="q">“I tried using Instinct to change my @Delta flight and hit a wall due to anti bot captcha”<small>@glennonchain · Instinct · 2d</small></td></tr>
+            <tr class="sub"><td colspan="3"><div class="embeds">
+              <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Macy Mills</b><span>@_CallMeMacy</span><span class="embed__x">𝕏</span></div><p>Yo @Delta and @OpenTable please stop blocking my agents 🙏🙏🙏🙏 this is the future.</p><div class="embed__foot">575 likes · Sep 20</div></div>
+              <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Owen</b><span>@owendesign</span><span class="embed__x">𝕏</span></div><p>Anyone have a good way to let your AI agent book @Delta flights? It keeps blocking it as bot traffic.</p><div class="embed__foot">3 likes · Sep 19</div></div>
+              <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Glenn</b><span>@glennonchain</span><span class="embed__x">𝕏</span></div><p>I tried using Instinct to change my @Delta flight and hit a wall due to anti bot captcha</p><div class="embed__foot">2 likes · Sep 20</div></div>
+            </div></td></tr>
+            <tr><td class="site">walmart.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="mx"></i><i class="mx"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i></span> 1–4</td><td class="q">“served a bot verification… left unsolved per policy”<small>@AswinDigital · Muse · 3d</small></td></tr>
+            <tr><td class="site">opentable.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="no"></i><i class="no"></i></span> 3–2</td><td class="q">“Muse has an OpenTable connector and it works great”<small>@jdpeterson · Muse · 1d</small></td></tr>
+            <tr><td class="site">x.com</td><td class="tally mono"><span class="dots"><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i></span> 0–5</td><td class="q">“Bruh Grok bot can't login to X.”<small>@vysecurity · Grok Bot · 6d</small></td></tr>
+            <tr><td class="site">ubereats.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="ok"></i><i class="no"></i><i class="no"></i></span> 2–2</td><td class="q">“Instinct logged in via emailed link… Muse got stuck on a verification code”<small>@chandnirao_here · 2d</small></td></tr>
+            <tr><td class="site">ebay.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="mx"></i><i class="mx"></i><i class="no"></i></span> 1–1</td><td class="q">“EBay has bot blockers.”<small>@… · Muse · 2d</small></td></tr>
+            <tr><td class="site">ticketmaster.com</td><td class="tally mono"><span class="dots"><i class="no"></i><i class="no"></i><i class="no"></i></span> 0–3</td><td class="q">“Stubhub, SeatGeek, TicketMaster”<small>@… · 2d</small></td></tr>
+            <tr><td class="site">stripe.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="ok"></i><i class="ok"></i></span> 3–0</td><td class="q">“Just booked 3 flights off Cathay Pacific using Muse and Link.”<small>@… · Muse · 2d</small></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="frame frame--phone A">
+        <div class="frame__bar">Phone</div>
+        <div class="nav"><span class="brand">ax.design</span><a href="#a" aria-current="page">Wall</a><a href="#a">Gallery</a></div>
+        <div class="bar">
+          <span class="tog"><span aria-pressed="true">30 days</span><span>All</span></span>
+          <select class="sel" aria-label="Assistant"><option>Any assistant</option></select>
+          <span class="n mono">12 sites</span>
+        </div>
+        <table>
+          <thead><tr><th>Site</th><th>30 days</th><th></th></tr></thead>
+          <tbody>
+            <tr><td class="site">amazon.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="mx"></i><i class="mx"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i></span> 8–6</td><td></td></tr>
+            <tr class="open"><td class="site">delta.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="ok"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i></span> 2–6</td><td></td></tr>
+            <tr class="sub"><td colspan="3"><div class="embeds">
+              <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Macy Mills</b><span>@_CallMeMacy</span><span class="embed__x">𝕏</span></div><p>Yo @Delta and @OpenTable please stop blocking my agents 🙏🙏🙏🙏 this is the future.</p><div class="embed__foot">575 likes · Sep 20</div></div>
+              <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Glenn</b><span>@glennonchain</span><span class="embed__x">𝕏</span></div><p>I tried using Instinct to change my @Delta flight and hit a wall due to anti bot captcha</p><div class="embed__foot">2 likes · Sep 20</div></div>
+            </div></td></tr>
+            <tr><td class="site">walmart.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="mx"></i><i class="mx"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i></span> 1–4</td><td></td></tr>
+            <tr><td class="site">opentable.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="no"></i><i class="no"></i></span> 3–2</td><td></td></tr>
+            <tr><td class="site">x.com</td><td class="tally mono"><span class="dots"><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i><i class="no"></i></span> 0–5</td><td></td></tr>
+            <tr><td class="site">ubereats.com</td><td class="tally mono"><span class="dots"><i class="ok"></i><i class="ok"></i><i class="no"></i><i class="no"></i></span> 2–2</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== B -->
+  <section class="dir" id="b">
+    <header>
+      <h2>B. Feed</h2>
+      <p>A phone-first timeline. The post is the whole item; the site name and a mark are the only labels. Filters are chips that scroll sideways. Two tabs: Posts and Sites. On a wide screen the Sites list sits beside the feed.</p>
+      <dl><dt>Font</dt><dd>Instrument Sans throughout</dd> <dt>Mobile</dt><dd>this is the native layout</dd> <dt>Risk</dt><dd>looks like a social app; the benchmark is a second-class tab</dd></dl>
+    </header>
+    <div class="frames">
+      <div class="frame B">
+        <div class="frame__bar">Desktop</div>
+        <div class="top">
+          <div class="tabs"><a href="#b" aria-current="page">Posts</a><a href="#b">Sites</a></div>
+          <div class="chips"><span class="chip" aria-pressed="true">30 days</span><span class="chip"><span class="m m-ok">✓</span> Worked</span><span class="chip"><span class="m m-no">✕</span> Stuck</span><span class="chip">Muse ▾</span><span class="chip">Site ▾</span><span class="chip">Pattern ▾</span><span class="chip">X · Reddit</span></div>
+        </div>
+        <div class="side">
+          <div class="feed">
+            <div class="item"><div class="item__head"><span class="m m-no">✕</span><span class="item__site">delta.com, opentable.com</span><span class="item__agent">Instinct, Muse</span><span class="item__age">2d</span></div>
+              <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Macy Mills</b><span>@_CallMeMacy</span><span class="embed__x">𝕏</span></div><p>Yo @Delta and @OpenTable please stop blocking my agents 🙏🙏🙏🙏 this is the future.</p><div class="embed__foot">575 likes · 54 replies</div></div>
+              <div class="item__tags"><span class="tag">Bot block</span></div></div>
+            <div class="item"><div class="item__head"><span class="m m-mx">–</span><span class="item__site">amazon.com, walmart.com</span><span class="item__agent">Muse</span><span class="item__age">2d</span></div>
+              <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Evergreen</b><span>@evrgn11112231</span><span class="embed__x">𝕏</span></div><p>Yesterday I had my @Muse research and buy replacement light bulbs for my refrigerator. It defaults to @amazon and I told it to also check @Walmart.<br><br>Amazon worked fine.<br>Walmart blocked it with a bot blocker.<br><br>Huge miss Walmart, I was trying to spend money with you.</p><div class="embed__foot">231 likes · 23 replies</div></div>
+              <div class="item__tags"><span class="tag">Bot block</span></div></div>
+            <div class="item"><div class="item__head"><span class="m m-ok">✓</span><span class="item__site">stripe.com</span><span class="item__agent">Instinct, Grok Bot</span><span class="item__age">5d</span></div>
+              <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Annika</b><span>@AnnikaSays</span><span class="embed__x">𝕏</span></div><p>Link for agents seems to be live in Canada now! 🇨🇦 Just successfully connected it to my Instinct &amp; Grok Bot</p><div class="embed__foot">12 likes</div></div>
+              <div class="item__tags"><span class="tag">Stripe Link</span></div></div>
+            <div class="item"><div class="item__head"><span class="m m-no">✕</span><span class="item__site">xfinity.com</span><span class="item__agent">Muse</span><span class="item__age">3d</span></div>
+              <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Neil Cybart</b><span>@neilcybart</span><span class="embed__x">𝕏</span></div><p>Muse couldn’t do anything because Xfinity needed him on the call to authenticate the account</p><div class="embed__foot">31 likes</div></div>
+              <div class="item__tags"><span class="tag">Human verification</span></div></div>
+          </div>
+          <ul class="rank">
+            <li><span class="s">amazon.com</span><span class="t"><span class="m m-ok">✓</span>8 <span class="m m-no">✕</span>6</span><span class="meter"><i style="width:57%"></i></span></li>
+            <li><span class="s">delta.com</span><span class="t"><span class="m m-ok">✓</span>2 <span class="m m-no">✕</span>6</span><span class="meter"><i style="width:25%"></i></span></li>
+            <li><span class="s">walmart.com</span><span class="t"><span class="m m-ok">✓</span>1 <span class="m m-no">✕</span>4</span><span class="meter"><i style="width:20%"></i></span></li>
+            <li><span class="s">opentable.com</span><span class="t"><span class="m m-ok">✓</span>3 <span class="m m-no">✕</span>2</span><span class="meter"><i style="width:60%"></i></span></li>
+            <li><span class="s">x.com</span><span class="t"><span class="m m-ok">✓</span>0 <span class="m m-no">✕</span>5</span><span class="meter"><i style="width:0%"></i></span></li>
+            <li><span class="s">ubereats.com</span><span class="t"><span class="m m-ok">✓</span>2 <span class="m m-no">✕</span>2</span><span class="meter"><i style="width:50%"></i></span></li>
+            <li><span class="s">stripe.com</span><span class="t"><span class="m m-ok">✓</span>3 <span class="m m-no">✕</span>0</span><span class="meter"><i style="width:100%"></i></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="frame frame--phone B">
+        <div class="frame__bar">Phone</div>
+        <div class="top">
+          <div class="tabs"><a href="#b" aria-current="page">Posts</a><a href="#b">Sites</a></div>
+          <div class="chips"><span class="chip" aria-pressed="true">30 days</span><span class="chip"><span class="m m-ok">✓</span> Worked</span><span class="chip"><span class="m m-no">✕</span> Stuck</span><span class="chip">Muse ▾</span><span class="chip">Site ▾</span><span class="chip">Pattern ▾</span></div>
+        </div>
+        <div class="feed">
+          <div class="item"><div class="item__head"><span class="m m-no">✕</span><span class="item__site">delta.com, opentable.com</span><span class="item__age">2d</span></div>
+            <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Macy Mills</b><span>@_CallMeMacy</span><span class="embed__x">𝕏</span></div><p>Yo @Delta and @OpenTable please stop blocking my agents 🙏🙏🙏🙏 this is the future.</p><div class="embed__foot">575 likes · 54 replies</div></div>
+            <div class="item__tags"><span class="tag">Bot block</span><span class="tag">Instinct, Muse</span></div></div>
+          <div class="item"><div class="item__head"><span class="m m-mx">–</span><span class="item__site">amazon.com, walmart.com</span><span class="item__age">2d</span></div>
+            <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Evergreen</b><span>@evrgn11112231</span><span class="embed__x">𝕏</span></div><p>Amazon worked fine.<br>Walmart blocked it with a bot blocker.<br><br>Huge miss Walmart, I was trying to spend money with you.</p><div class="embed__foot">231 likes · 23 replies</div></div>
+            <div class="item__tags"><span class="tag">Bot block</span><span class="tag">Muse</span></div></div>
+          <div class="item"><div class="item__head"><span class="m m-ok">✓</span><span class="item__site">stripe.com</span><span class="item__age">5d</span></div>
+            <div class="embed"><div class="embed__who"><span class="embed__av"></span><b>Annika</b><span>@AnnikaSays</span><span class="embed__x">𝕏</span></div><p>Link for agents seems to be live in Canada now! 🇨🇦 Just successfully connected it to my Instinct &amp; Grok Bot</p><div class="embed__foot">12 likes</div></div>
+            <div class="item__tags"><span class="tag">Stripe Link</span><span class="tag">Instinct, Grok Bot</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== C -->
+  <section class="dir" id="c">
+    <header>
+      <h2>C. Scoreboard</h2>
+      <p>The benchmark is the page. One big number at the top (how often agents got through this month), then a ranked board where each site is a percentage. Tap a site and its posts open under it. No separate wall tab: the posts are the evidence behind each score.</p>
+      <dl><dt>Font</dt><dd>Archivo variable, condensed for numbers, wide for the wordmark</dd> <dt>Mobile</dt><dd>counts column drops, the number stays</dd> <dt>Risk</dt><dd>percentages from 3 posts look more exact than they are; a minimum of 3 posts and the count next to each is the guard</dd></dl>
+    </header>
+    <div class="frames">
+      <div class="frame C">
+        <div class="frame__bar">Desktop</div>
+        <div class="head"><span class="brand">Agent Experience</span><span class="seg"><span aria-pressed="true">30 days</span><span>All time</span></span></div>
+        <div class="hero"><div class="big">38<small>%</small></div><p>of agent attempts on consumer sites got through this month. 63 posts, 12 sites, 8 assistants.</p></div>
+        <ol class="board">
+          <li class="row"><span class="pct good">100</span><span><span class="site">stripe.com</span><br><span class="why">Link pays for Muse, Instinct and Grok Bot</span></span><span class="n">3 posts</span></li>
+          <li class="row"><span class="pct good">60</span><span><span class="site">opentable.com</span><br><span class="why">Muse connector works · site blocks browsers</span></span><span class="n">5 posts</span></li>
+          <li class="row"><span class="pct">57</span><span><span class="site">amazon.com</span><br><span class="why">works with a logged-in session · 2FA stops cloud agents</span></span><span class="n">16 posts</span></li>
+          <li class="row"><span class="pct">50</span><span><span class="site">ubereats.com</span><br><span class="why">email login link works · verification code does not</span></span><span class="n">4 posts</span></li>
+          <li class="row open"><span class="pct bad">25</span><span><span class="site">delta.com</span><br><span class="why">CAPTCHA on login and flight change</span></span><span class="n">8 posts</span></li>
+          <li class="detail"><div class="embeds">
+            <div class="embed"><span class="m m-no">✕</span><div class="embed__who"><span class="embed__av"></span><b>Macy Mills</b><span>@_CallMeMacy</span><span class="embed__x">𝕏</span></div><p>Yo @Delta and @OpenTable please stop blocking my agents 🙏🙏🙏🙏 this is the future.</p><div class="embed__foot">575 likes · Sep 20</div></div>
+            <div class="embed"><span class="m m-no">✕</span><div class="embed__who"><span class="embed__av"></span><b>Glenn</b><span>@glennonchain</span><span class="embed__x">𝕏</span></div><p>I tried using Instinct to change my @Delta flight and hit a wall due to anti bot captcha</p><div class="embed__foot">2 likes · Sep 20</div></div>
+            <div class="embed"><span class="m m-ok">✓</span><div class="embed__who"><span class="embed__av"></span><b>unixterminal</b><span>@unixterminal</span><span class="embed__x">𝕏</span></div><p>Delta has worked for me. TripIt OTOh hard blocks agents and recently locked out their API.</p><div class="embed__foot">Sep 21</div></div>
+          </div></li>
+          <li class="row"><span class="pct bad">20</span><span><span class="site">walmart.com</span><br><span class="why">“Press &amp; Hold” bot check</span></span><span class="n">7 posts</span></li>
+          <li class="row"><span class="pct bad">0</span><span><span class="site">x.com</span><br><span class="why">blocks Grok Bot login</span></span><span class="n">5 posts</span></li>
+          <li class="row"><span class="pct bad">0</span><span><span class="site">ticketmaster.com</span><br><span class="why">seat map, CAPTCHA, cart timer</span></span><span class="n">3 posts</span></li>
+        </ol>
+        <div class="foot">Score = worked ÷ (worked + stuck), posts from the last 30 days, minimum 3 posts. Posts are labelled by a model; quotes are exact.</div>
+      </div>
+      <div class="frame frame--phone C">
+        <div class="frame__bar">Phone</div>
+        <div class="head"><span class="brand">Agent Experience</span><span class="seg"><span aria-pressed="true">30d</span><span>All</span></span></div>
+        <div class="hero"><div class="big">38<small>%</small></div><p>of agent attempts on consumer sites got through this month.</p></div>
+        <ol class="board">
+          <li class="row"><span class="pct good">100</span><span><span class="site">stripe.com</span><br><span class="why">Link pays for Muse, Instinct, Grok Bot</span></span></li>
+          <li class="row"><span class="pct good">60</span><span><span class="site">opentable.com</span><br><span class="why">connector works · site blocks browsers</span></span></li>
+          <li class="row"><span class="pct">57</span><span><span class="site">amazon.com</span><br><span class="why">works logged in · 2FA stops cloud agents</span></span></li>
+          <li class="row open"><span class="pct bad">25</span><span><span class="site">delta.com</span><br><span class="why">CAPTCHA on login and flight change</span></span></li>
+          <li class="detail"><div class="embeds">
+            <div class="embed"><span class="m m-no">✕</span><div class="embed__who"><span class="embed__av"></span><b>Macy Mills</b><span>@_CallMeMacy</span><span class="embed__x">𝕏</span></div><p>Yo @Delta and @OpenTable please stop blocking my agents 🙏🙏🙏🙏 this is the future.</p><div class="embed__foot">575 likes · Sep 20</div></div>
+          </div></li>
+          <li class="row"><span class="pct bad">20</span><span><span class="site">walmart.com</span><br><span class="why">“Press &amp; Hold” bot check</span></span></li>
+          <li class="row"><span class="pct bad">0</span><span><span class="site">x.com</span><br><span class="why">blocks Grok Bot login</span></span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</div>

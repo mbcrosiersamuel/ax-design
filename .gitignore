@@ -106,3 +106,11 @@ temp/
 *.njsproj
 *.sln
 *.sw?
+
+# Research raw dumps (100+ MB). The scripts and small reference files stay.
+research/raw/*
+!research/raw/x/
+research/raw/x/*
+!research/raw/x/x_collect.py
+!research/raw/x/availability.json
+!research/raw/webmcp_directory.json
