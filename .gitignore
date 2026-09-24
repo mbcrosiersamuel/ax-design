@@ -111,6 +111,5 @@ temp/
 research/raw/*
 !research/raw/x/
 research/raw/x/*
-!research/raw/x/x_collect.py
 !research/raw/x/availability.json
 !research/raw/webmcp_directory.json

@@ -13,9 +13,9 @@ Credentials are read from ~/.config/ax-research/x_credentials.env and are never 
 import base64, hashlib, hmac, json, os, re, secrets, sys, time, urllib.parse, urllib.request, urllib.error
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LEDGER = os.path.join(HERE, "ledger.json")
+LEDGER = os.path.join(HERE, "..", "raw", "x", "ledger.json")
 CRED_FILE = os.path.expanduser("~/.config/ax-research/x_credentials.env")
-BUDGET_USD = 8.00
+BUDGET_USD = float(os.environ.get("X_BUDGET_USD", "8"))
 POST_COST = 0.005
 COUNT_COST = 0.005
 FIELDS = "created_at,public_metrics,conversation_id,author_id,in_reply_to_user_id,referenced_tweets,lang,note_tweet,entities"
@@ -104,7 +104,7 @@ def cmd_counts(q):
 
 def cmd_search(q, maxn, use_all, sort, name):
     l = ledger()
-    out = os.path.join(HERE, (name or slug(q)) + ".jsonl")
+    out = os.path.join(HERE, "..", "raw", "x", (name or slug(q)) + ".jsonl")
     seen = set()
     if os.path.exists(out):
         for line in open(out):

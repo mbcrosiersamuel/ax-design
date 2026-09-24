@@ -1,0 +1,20 @@
+# name<TAB>query. Seed threads are conversation_id:<post id>. Recent search covers the last 7 days only.
+seed_utsengar	conversation_id:2101695125151977803
+seed_callmemacy	conversation_id:2101757585611444724
+muse_instinct	(Muse OR Instinct) (agent OR agents OR booked OR bought OR checkout OR blocked) -is:retweet lang:en
+blocking_agents	("blocking my agent" OR "blocking my agents" OR "blocked my agent" OR "blocks agents" OR "block agents" OR "blocking agents" OR "block AI agents") -is:retweet lang:en
+agent_captcha	(agent OR agents) (captcha OR cloudflare OR "bot detection" OR "access denied") (booking OR checkout OR website OR site) -is:retweet lang:en
+my_agent_buy	("my agent" OR "my agents") (book OR booked OR buy OR bought OR order OR ordered OR checkout) -is:retweet lang:en
+dev_auth_friction	("claude code" OR codex OR "my agent") ("magic link" OR 2FA OR OTP OR "api key" OR dashboard OR login) (stuck OR can't OR blocked OR annoying OR friction) -is:retweet lang:en
+ax_terms	("agent experience" OR "agent-friendly" OR "agent friendly" OR "agent-ready" OR "agent ready") -is:retweet lang:en
+agent_forward	(WebMCP OR "agentic commerce" OR "Stripe Link") (agent OR agents) -is:retweet lang:en
+named_agents	(grok OR "chatgpt agent" OR comet OR atlas OR "claude in chrome" OR "claude for chrome") (blocked OR captcha OR couldn't OR can't) (site OR website OR booking OR checkout OR order) -is:retweet lang:en
+named_brands	(@Delta OR @AmericanAir OR @united OR @OpenTable OR @amazon OR @Ticketmaster OR @SouthwestAir) (agent OR agents) (block OR blocking OR blocked) -is:retweet lang:en
+muse_instinct_friction	(Muse OR Instinct OR @Muse OR @instinct) (blocked OR blocks OR blocking OR captcha OR "bot detection" OR struggle OR struggled OR stuck OR failed OR "couldn't") (site OR website OR checkout OR book OR booking OR order OR buy OR login) -is:retweet lang:en -"invite code"
+muse_instinct_success	(Muse OR Instinct) ("just booked" OR "just bought" OR "just ordered" OR "booked a" OR "ordered from" OR "bought from" OR "worked perfectly" OR "stripe link") -is:retweet lang:en -"invite code"
+grok_bot	("grok bot" OR "grok agent" OR "grok's browser") (buy OR bought OR book OR booked OR order OR checkout OR blocked OR amazon OR login) -is:retweet lang:en
+agent_login_2fa	(agent OR agents) (2FA OR "two factor" OR OTP OR "magic link" OR passkey OR "verification code") (stuck OR blocked OR can't OR annoying OR breaks OR friction OR "human in the loop") -is:retweet lang:en
+site_owner_block	("AI agents" OR "shopping agents" OR "browser agents") (block OR blocking OR allow OR allowing) (our OR we OR merchants OR retailers OR site OR store) (cloudflare OR akamai OR "bot management" OR "web bot auth" OR checkout) -is:retweet lang:en
+webmcp	WebMCP -is:retweet lang:en
+acp_checkout	("agentic commerce protocol" OR "instant checkout" OR "agentic checkout") (works OR worked OR tried OR bought OR broken OR failed OR experience) -is:retweet lang:en
+coding_agent_good	("claude code" OR codex OR cursor) (MCP OR CLI OR "llms.txt") (stripe OR supabase OR vercel OR cloudflare OR resend OR linear OR neon OR clerk) ("just works" OR amazing OR seamless OR love OR "so good" OR painful OR broken OR sucks) -is:retweet lang:en
