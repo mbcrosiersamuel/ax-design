@@ -1,0 +1,1186 @@
+[
+ {
+  "site": "shopify.com",
+  "category": "retail",
+  "reports": 74,
+  "good": 23,
+  "mixed": 26,
+  "bad": 25,
+  "score": 49,
+  "platforms": {
+   "reddit": 74
+  },
+  "top_friction": [
+   "new:no-merchant-opt-out",
+   "new:agent-traffic-attribution-unclear",
+   "new:product-detail-lost-in-agent-channel",
+   "error-messages-unclear"
+  ],
+  "top_enablers": [
+   "agent-payments",
+   "mcp-server",
+   "public-api",
+   "cli"
+  ],
+  "agents": [
+   "chatgpt",
+   "unknown",
+   "claude-code",
+   "chatgpt-instant-checkout"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/shopify/comments/1qb6l4z/agentic_storefront_fees_quite_high_for_chatgpt/",
+   "https://www.reddit.com/r/shopify/comments/1vqwgjw/since_when_is_shop_an_agentic_platform/",
+   "https://www.reddit.com/r/shopify/comments/1utx3te/has_anyone_redesigned_a_shopify_store_using_codex/owzljzd/",
+   "https://www.reddit.com/r/shopify/comments/1s4mklc/agentic_storefronts_i_thought_we_could_opt_out/",
+   "https://www.reddit.com/r/shopify/comments/1trdkdk/whats_the_consensus_on_the_agentic_storefront/oona7qk/"
+  ]
+ },
+ {
+  "site": "cloudflare.com",
+  "category": "devtool",
+  "reports": 56,
+  "good": 16,
+  "mixed": 13,
+  "bad": 27,
+  "score": 40,
+  "platforms": {
+   "reddit": 47,
+   "x": 9
+  },
+  "top_friction": [
+   "bot-block",
+   "error-messages-unclear",
+   "captcha",
+   "new:default-block-unknown-to-owner"
+  ],
+  "top_enablers": [
+   "markdown-docs",
+   "mcp-server",
+   "agent-allowed-policy",
+   "cli"
+  ],
+  "agents": [
+   "unknown",
+   "claude-code",
+   "claude",
+   "chatgpt"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/CloudFlare/comments/1whfoj3/psa_cloudflare_now_defaults_to_allowing_ai/",
+   "https://www.reddit.com/r/CloudFlare/comments/1rqltcj/anyone_else_using_cloudflares_new_skills_repo_for/",
+   "https://www.reddit.com/r/CloudFlare/comments/1tkjv1x/heads_up_the_block_ai_scrapers_toggle_is/",
+   "https://www.reddit.com/r/CloudFlare/comments/1s8oihf/cloudflare_keeps_blocking_claude_despite_adding/",
+   "https://www.reddit.com/r/CloudFlare/comments/1r54kz4/markdown_for_agents_on_the_free_plan_using/"
+  ]
+ },
+ {
+  "site": "amazon.com",
+  "category": "retail",
+  "reports": 50,
+  "good": 14,
+  "mixed": 7,
+  "bad": 29,
+  "score": 42,
+  "platforms": {
+   "reddit": 34,
+   "x": 16
+  },
+  "top_friction": [
+   "bot-block",
+   "error-messages-unclear",
+   "agent-refuses",
+   "tos-prohibits-agents"
+  ],
+  "top_enablers": [
+   "new:user-browser-session",
+   "simple-html",
+   "public-api",
+   "mcp-server"
+  ],
+  "agents": [
+   "chatgpt-agent",
+   "comet",
+   "muse",
+   "grok-bot"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/ChatGPT/comments/1ma0wub/is_amazon_blocking_chatgpt_agents_any_workarounds/",
+   "https://x.com/evrgn11112231/status/2101667652808626610",
+   "https://www.reddit.com/r/perplexity_ai/comments/1mv5g6n/amazon_is_blocking_comet_but_not_chrome/",
+   "https://www.reddit.com/r/perplexity_ai/comments/1qh3vnz/comet_vs_claude_for_chrome_extension_compared/",
+   "https://www.reddit.com/r/perplexity_ai/comments/1mg1uei/just_used_comet_to_automate_a_boring_task/"
+  ]
+ },
+ {
+  "site": "supabase.com",
+  "category": "devtool",
+  "reports": 38,
+  "good": 13,
+  "mixed": 10,
+  "bad": 15,
+  "score": 47,
+  "platforms": {
+   "reddit": 38
+  },
+  "top_friction": [
+   "new:destructive-action-risk",
+   "error-messages-unclear",
+   "new:mcp-token-bloat",
+   "new:coarse-permissions"
+  ],
+  "top_enablers": [
+   "mcp-server",
+   "cli",
+   "markdown-docs",
+   "clear-errors"
+  ],
+  "agents": [
+   "claude-code",
+   "cursor",
+   "codex",
+   "unknown"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/mcp/comments/1m75ww6/just_used_supabase_mcp_didnt_even_open_the/",
+   "https://www.reddit.com/r/Supabase/comments/1q00gtb/if_youre_using_claude_code_with_supabase_cli_do/",
+   "https://www.reddit.com/r/Supabase/comments/1s9ni4o/we_shipped_an_ssh_server_for_supabase_docs/",
+   "https://www.reddit.com/r/ClaudeCode/comments/1p27hwk/reminder_delete_your_mcps_and_prune_your_claudemd/",
+   "https://www.reddit.com/r/cursor/comments/1pcmnmx/tips_and_tricks_from_a_product_manager_shipping_a/"
+  ]
+ },
+ {
+  "site": "stripe.com",
+  "category": "payments",
+  "reports": 22,
+  "good": 10,
+  "mixed": 5,
+  "bad": 7,
+  "score": 62,
+  "platforms": {
+   "reddit": 19,
+   "x": 3
+  },
+  "top_friction": [
+   "error-messages-unclear",
+   "new:no-agent-spend-limits",
+   "docs-stale",
+   "api-key-manual"
+  ],
+  "top_enablers": [
+   "mcp-server",
+   "cli",
+   "webhooks",
+   "agent-payments"
+  ],
+  "agents": [
+   "unknown",
+   "custom",
+   "claude",
+   "codex"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/SaaS/comments/1t4x65f/an_almost_guaranteed_way_to_make_more_money_with/",
+   "https://x.com/AnnikaSays/status/2100688335329173541",
+   "https://x.com/pk_iv/status/2100991623379468465",
+   "https://www.reddit.com/r/Entrepreneur/comments/1tu9qob/stripe_mcp_for_churn_analysis/",
+   "https://www.reddit.com/r/codex/comments/1sbwpjt/whats_your_codex_setup_for_working_with_external/"
+  ]
+ },
+ {
+  "site": "n8n.io",
+  "category": "saas",
+  "reports": 18,
+  "good": 8,
+  "mixed": 5,
+  "bad": 5,
+  "score": 60,
+  "platforms": {
+   "reddit": 18
+  },
+  "top_friction": [
+   "error-messages-unclear",
+   "new:mcp-token-bloat",
+   "api-key-manual",
+   "slow-or-timeout"
+  ],
+  "top_enablers": [
+   "mcp-server",
+   "public-api",
+   "api-key-self-serve"
+  ],
+  "agents": [
+   "claude-code",
+   "claude",
+   "unknown"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/n8n/comments/1tgt5e1/been_using_n8nmcp_with_claude_code_for_a_month/",
+   "https://www.reddit.com/r/n8n/comments/1ty2jcx/anyone_using_claude_code_to_build_n8n_workflows/oq0yiac/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1olhiid/what_mcps_are_you_using_with_claude_code_right_now/nmjj638/",
+   "https://www.reddit.com/r/n8n/comments/1tgt5e1/been_using_n8nmcp_with_claude_code_for_a_month/omjczw6/",
+   "https://www.reddit.com/r/ClaudeCode/comments/1tz36uf/n8n_mcp_integration_error_403_via_claude_code/"
+  ]
+ },
+ {
+  "site": "github.com",
+  "category": "devtool",
+  "reports": 17,
+  "good": 6,
+  "mixed": 9,
+  "bad": 2,
+  "score": 59,
+  "platforms": {
+   "reddit": 17
+  },
+  "top_friction": [
+   "new:mcp-token-bloat",
+   "slow-or-timeout",
+   "session-expiry",
+   "api-key-manual"
+  ],
+  "top_enablers": [
+   "cli",
+   "mcp-server",
+   "public-api"
+  ],
+  "agents": [
+   "unknown",
+   "claude-code",
+   "codex",
+   "claude-in-chrome"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/mcp/comments/1r09tpd/5_mcps_that_genuinely_made_me_quicker/o4gxffy/",
+   "https://www.reddit.com/r/mcp/comments/1mj0fxs/i_spent_3_weeks_building_my_dream_mcp_setup_and/n7935ux/",
+   "https://www.reddit.com/r/mcp/comments/1njy19g/any_mcp_server_you_cannot_live_without/nev50y5/",
+   "https://www.reddit.com/r/mcp/comments/1njy19g/any_mcp_server_you_cannot_live_without/newg3el/",
+   "https://www.reddit.com/r/codex/comments/1oydueg/lost_gitpush_ability_after_gpt51_codex/"
+  ]
+ },
+ {
+  "site": "walmart.com",
+  "category": "retail",
+  "reports": 14,
+  "good": 1,
+  "mixed": 2,
+  "bad": 11,
+  "score": 17,
+  "platforms": {
+   "reddit": 7,
+   "x": 7
+  },
+  "top_friction": [
+   "bot-block",
+   "captcha",
+   "new:low-conversion-in-agent-channel",
+   "payment-card-entry"
+  ],
+  "top_enablers": [
+   "agent-payments",
+   "agent-allowed-policy",
+   "new:human-handoff"
+  ],
+  "agents": [
+   "chatgpt-agent",
+   "grok-bot",
+   "chatgpt-instant-checkout",
+   "muse"
+  ],
+  "sources": [
+   "https://x.com/evrgn11112231/status/2101667652808626610",
+   "https://www.reddit.com/r/OpenAI/comments/1mce797/agent_mode_kind_of_useless/",
+   "https://www.reddit.com/r/SEO/comments/1s1k1j0/walmart_chatgpt_checkout_converted_3x_worse_than/",
+   "https://www.reddit.com/r/ChatGPT/comments/1o28vxo/whats_the_point_of_agent_mode_if_most_websites/",
+   "https://www.reddit.com/r/ChatGPT/comments/1macefo/chatgpt_agent_mode_is_trying_to_do_my_grocery/"
+  ]
+ },
+ {
+  "site": "linkedin.com",
+  "category": "social",
+  "reports": 13,
+  "good": 4,
+  "mixed": 1,
+  "bad": 8,
+  "score": 37,
+  "platforms": {
+   "reddit": 10,
+   "x": 3
+  },
+  "top_friction": [
+   "bot-block",
+   "account-ban",
+   "login-wall",
+   "rate-limit"
+  ],
+  "top_enablers": [
+   "new:user-browser-session"
+  ],
+  "agents": [
+   "openclaw",
+   "chatgpt-agent",
+   "claude-cowork",
+   "claude-in-chrome"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/openclaw/comments/1sft22e/kept_getting_my_accounts_banned_trying_to_get/",
+   "https://www.reddit.com/r/openclaw/comments/1rude4j/my_agent_was_massvisiting_linkedin_profiles_and/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1psuy3i/claude_for_chrome/",
+   "https://www.reddit.com/r/OpenAI/comments/1ku8ace/using_cuaoperator_for_linkedin_scraping/",
+   "https://www.reddit.com/r/OpenAI/comments/1majcf4/what_are_some_good_use_cases_of_agent_mode_that/n72srpl/"
+  ]
+ },
+ {
+  "site": "delta.com",
+  "category": "airline",
+  "reports": 10,
+  "good": 3,
+  "mixed": 0,
+  "bad": 7,
+  "score": 26,
+  "platforms": {
+   "reddit": 2,
+   "x": 8
+  },
+  "top_friction": [
+   "bot-block",
+   "captcha",
+   "login-wall"
+  ],
+  "top_enablers": [
+   "new:local-browser"
+  ],
+  "agents": [
+   "unknown",
+   "instinct",
+   "openclaw",
+   "chatgpt-agent"
+  ],
+  "sources": [
+   "https://x.com/_CallMeMacy/status/2101757585611444724",
+   "https://x.com/owendesign/status/2101327816495095872",
+   "https://x.com/glennonchain/status/2101686456091557925",
+   "https://x.com/srcasm/status/2101750558688223491",
+   "https://x.com/owendesign/status/2101409822625173815"
+  ]
+ },
+ {
+  "site": "vercel.com",
+  "category": "devtool",
+  "reports": 10,
+  "good": 6,
+  "mixed": 1,
+  "bad": 3,
+  "score": 59,
+  "platforms": {
+   "reddit": 9,
+   "x": 1
+  },
+  "top_friction": [
+   "api-key-manual",
+   "slow-or-timeout",
+   "new:mcp-wrong-data",
+   "error-messages-unclear"
+  ],
+  "top_enablers": [
+   "mcp-server",
+   "cli",
+   "skill-or-plugin"
+  ],
+  "agents": [
+   "claude-code",
+   "codex",
+   "cursor",
+   "claude"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/codex/comments/1nx9q54/codex_so_far/",
+   "https://www.reddit.com/r/vercel/comments/1meyiaj/debugging_decay_the_hidden_reason_youre_throwing/n6nqxxs/",
+   "https://www.reddit.com/r/codex/comments/1oj8bjk/how_to_add_vercel_mcp_inside_codex_ide_cli/",
+   "https://www.reddit.com/r/cursor/comments/1nzdobu/automatic_error_sending_vercel_cursor/ni6pd45/",
+   "https://www.reddit.com/r/vercel/comments/1sb6y8h/seeking_help_could_someone_share_the_complete/oe2i15t/"
+  ]
+ },
+ {
+  "site": "shopify.dev",
+  "category": "devtool",
+  "reports": 9,
+  "good": 5,
+  "mixed": 3,
+  "bad": 1,
+  "score": 71,
+  "platforms": {
+   "reddit": 9
+  },
+  "top_friction": [
+   "docs-stale",
+   "no-api",
+   "new:agent-traffic-attribution-unclear",
+   "hallucinated-success"
+  ],
+  "top_enablers": [
+   "mcp-server",
+   "public-api",
+   "markdown-docs",
+   "cli"
+  ],
+  "agents": [
+   "unknown",
+   "claude",
+   "chatgpt-instant-checkout",
+   "cursor"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/shopify/comments/1ucg6bw/shopify_spring_2026_dropped_150_updates_the_one/ot3q5rz/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1pi8kyr/the_mcp_ecosystem_is_a_mess_who_wants_to_help/ntavujf/",
+   "https://www.reddit.com/r/shopify/comments/1sci1z1/replace_sidekick_with_another_ai/oehqp32/",
+   "https://www.reddit.com/r/shopify/comments/1pt68s0/how_often_do_you_update_your_shopify_theme/nvfyy68/",
+   "https://www.reddit.com/r/mcp/comments/1smo81b/shopify_is_now_routing_claude_code_gemini_cli_and/oju1ueu/"
+  ]
+ },
+ {
+  "site": "appstoreconnect.apple.com",
+  "category": "devtool",
+  "reports": 8,
+  "good": 2,
+  "mixed": 1,
+  "bad": 5,
+  "score": 31,
+  "platforms": {
+   "reddit": 8
+  },
+  "top_friction": [
+   "dashboard-only",
+   "api-key-manual",
+   "error-messages-unclear",
+   "new:mcp-low-coverage"
+  ],
+  "top_enablers": [
+   "mcp-server",
+   "public-api",
+   "cli"
+  ],
+  "agents": [
+   "claude-code",
+   "cursor",
+   "claude"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/ClaudeAI/comments/1sdot1s/claude_code_can_now_submit_your_app_to_app_store/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1ph5p6g/shipped_an_ios_app_with_claude_code_from_zero/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1t4920f/claude_just_saved_me_hours_of_copypasting_on_app/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1sdot1s/claude_code_can_now_submit_your_app_to_app_store/oeyma3g/",
+   "https://www.reddit.com/r/cursor/comments/1ixvdwf/apple_apis_and_codemagic/"
+  ]
+ },
+ {
+  "site": "atlassian.com",
+  "category": "saas",
+  "reports": 7,
+  "good": 2,
+  "mixed": 5,
+  "bad": 0,
+  "score": 58,
+  "platforms": {
+   "reddit": 7
+  },
+  "top_friction": [
+   "new:mcp-token-bloat",
+   "session-expiry",
+   "slow-or-timeout",
+   "new:destructive-action-risk"
+  ],
+  "top_enablers": [
+   "mcp-server",
+   "cli",
+   "public-api"
+  ],
+  "agents": [
+   "claude-code",
+   "unknown",
+   "cursor"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/ClaudeCode/comments/1oz44ff/musthave_mcps/np9hw8g/",
+   "https://www.reddit.com/r/cursor/comments/1olhgqp/what_mcps_are_you_using_with_cursor_right_now/nmjqjpa/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1vh0yd3/top_15_mcp_servers_that_are_actually_useful_in/p21frft/",
+   "https://www.reddit.com/r/mcp/comments/1mj0fxs/i_spent_3_weeks_building_my_dream_mcp_setup_and/n7af0l8/",
+   "https://www.reddit.com/r/mcp/comments/1o8td2b/which_mcps_are_you_using_and_why/njz9dy9/"
+  ]
+ },
+ {
+  "site": "aws.amazon.com",
+  "category": "devtool",
+  "reports": 7,
+  "good": 4,
+  "mixed": 0,
+  "bad": 3,
+  "score": 54,
+  "platforms": {
+   "reddit": 7
+  },
+  "top_friction": [
+   "new:destructive-action-risk",
+   "api-key-manual",
+   "new:coarse-permissions"
+  ],
+  "top_enablers": [
+   "cli",
+   "mcp-server"
+  ],
+  "agents": [
+   "claude-code",
+   "unknown"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/ClaudeCode/comments/1m2uqz0/how_claude_destroyed_my_entire_aws_platform/",
+   "https://www.reddit.com/r/ClaudeCode/comments/1q1zs1m/claude_code_aws_cli_solved_devops_for_me/",
+   "https://www.reddit.com/r/ClaudeCode/comments/1q1zs1m/claude_code_aws_cli_solved_devops_for_me/nxa4oqt/",
+   "https://www.reddit.com/r/AI_Agents/comments/1u3sqve/making_an_agent_work_still_requires_a_shit_ton_of/",
+   "https://www.reddit.com/r/mcp/comments/1mj0fxs/i_spent_3_weeks_building_my_dream_mcp_setup_and/n7auuq5/"
+  ]
+ },
+ {
+  "site": "opentable.com",
+  "category": "other",
+  "reports": 7,
+  "good": 4,
+  "mixed": 0,
+  "bad": 3,
+  "score": 46,
+  "platforms": {
+   "reddit": 2,
+   "x": 5
+  },
+  "top_friction": [
+   "bot-block",
+   "login-wall",
+   "account-ban",
+   "rate-limit"
+  ],
+  "top_enablers": [
+   "skill-or-plugin",
+   "new:user-browser-session",
+   "agent-allowed-policy"
+  ],
+  "agents": [
+   "openclaw",
+   "instinct",
+   "muse",
+   "muse+instinct"
+  ],
+  "sources": [
+   "https://x.com/_CallMeMacy/status/2101757585611444724",
+   "https://www.reddit.com/r/openclaw/comments/1rxhdaf/solved_my_personal_pain_of_booking_restaurant_for/",
+   "https://www.reddit.com/r/openclaw/comments/1rq01u9/booking_restaurant_on_opentable/",
+   "https://x.com/jdpeterson/status/2101843085575750140",
+   "https://x.com/milliemyang/status/2100323121979129959"
+  ]
+ },
+ {
+  "site": "x.com",
+  "category": "social",
+  "reports": 7,
+  "good": 0,
+  "mixed": 1,
+  "bad": 6,
+  "score": 24,
+  "platforms": {
+   "reddit": 2,
+   "x": 5
+  },
+  "top_friction": [
+   "bot-block",
+   "account-ban",
+   "login-wall",
+   "session-expiry"
+  ],
+  "top_enablers": [
+   "new:user-browser-session"
+  ],
+  "agents": [
+   "grok-bot",
+   "openclaw",
+   "unknown"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/openclaw/comments/1r7m1oq/heres_how_i_got_openclaw_to_use_x_and_linkedin_on/",
+   "https://www.reddit.com/r/openclaw/comments/1s5682e/use_openclaw_but_twitter_account_was_quickly/",
+   "https://x.com/maestrooth/status/2100273808821338220",
+   "https://x.com/uniquesupri/status/2099902409447227392",
+   "https://x.com/vysecurity/status/2100271864388211121"
+  ]
+ },
+ {
+  "site": "ebay.com",
+  "category": "retail",
+  "reports": 6,
+  "good": 1,
+  "mixed": 2,
+  "bad": 3,
+  "score": 37,
+  "platforms": {
+   "reddit": 3,
+   "x": 3
+  },
+  "top_friction": [
+   "bot-block",
+   "session-expiry",
+   "dynamic-ui",
+   "slow-or-timeout"
+  ],
+  "top_enablers": [],
+  "agents": [
+   "grok-bot",
+   "custom",
+   "chatgpt-agent",
+   "openclaw"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/openclaw/comments/1ubee7g/oh_sorry_i_should_have_told_you_im_stuck_but/",
+   "https://www.reddit.com/r/OpenAI/comments/1mv2lgz/agent_mode_is_so_impressive/n9qlgop/",
+   "https://x.com/hey1tspriyanshu/status/2099724607523590513",
+   "https://x.com/danielhayesmith/status/2100789159522664568",
+   "https://www.reddit.com/r/AI_Agents/comments/1wd97ip/building_agents_for_ecommerce_price_checks_auto/"
+  ]
+ },
+ {
+  "site": "reddit.com",
+  "category": "social",
+  "reports": 6,
+  "good": 0,
+  "mixed": 1,
+  "bad": 5,
+  "score": 24,
+  "platforms": {
+   "reddit": 6
+  },
+  "top_friction": [
+   "bot-block",
+   "captcha",
+   "auth-sms-otp",
+   "dynamic-ui"
+  ],
+  "top_enablers": [
+   "skill-or-plugin"
+  ],
+  "agents": [
+   "custom",
+   "claude-in-chrome",
+   "operator",
+   "openclaw"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/ClaudeAI/comments/1pl9try/ditched_mcps_for_claude_skills_a_residential/",
+   "https://www.reddit.com/r/ChatGPT/comments/1wb4ak8/tested_gpt6_astras_viral_captcha_demo_against_7/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1rpxezb/claude_in_chrome_extension_blocks_reddit_and/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1vh0yd3/top_15_mcp_servers_that_are_actually_useful_in/p2215h2/",
+   "https://www.reddit.com/r/openclaw/comments/1r0ofpz/reddit_blocked_my_bot/"
+  ]
+ },
+ {
+  "site": "docs.google.com",
+  "category": "saas",
+  "reports": 5,
+  "good": 0,
+  "mixed": 1,
+  "bad": 4,
+  "score": 24,
+  "platforms": {
+   "reddit": 5
+  },
+  "top_friction": [
+   "dynamic-ui",
+   "slow-or-timeout",
+   "hallucinated-success",
+   "rate-limit"
+  ],
+  "top_enablers": [],
+  "agents": [
+   "atlas",
+   "operator",
+   "comet",
+   "claude"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/PerplexityComet/comments/1sgj8ls/anyone_else_having_comet_randomly_refuse_super/",
+   "https://www.reddit.com/r/OpenAI/comments/1ocno8q/atlass_agent_mode_leaves_a_lot_to_be_desired_at/",
+   "https://www.reddit.com/r/OpenAI/comments/1l2ozip/has_anyone_actually_gotten_productive_use_out_of/mykw2zy/",
+   "https://www.reddit.com/r/ClaudeCode/comments/1svnhv0/why_does_claude_code_struggle_so_much_to_update_a/",
+   "https://www.reddit.com/r/ClaudeCode/comments/1svnhv0/why_does_claude_code_struggle_so_much_to_update_a/oi9p9y5/"
+  ]
+ },
+ {
+  "site": "facebook.com",
+  "category": "social",
+  "reports": 4,
+  "good": 1,
+  "mixed": 2,
+  "bad": 1,
+  "score": 40,
+  "platforms": {
+   "reddit": 2,
+   "x": 2
+  },
+  "top_friction": [
+   "account-ban",
+   "tos-prohibits-agents",
+   "login-wall",
+   "bot-block"
+  ],
+  "top_enablers": [
+   "new:user-browser-session"
+  ],
+  "agents": [
+   "grok-bot",
+   "comet",
+   "openclaw"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/perplexity_ai/comments/1ocdtfg/why_is_no_one_talking_about_how_unusable_comet_is/",
+   "https://x.com/hey1tspriyanshu/status/2099724607523590513",
+   "https://x.com/danielhayesmith/status/2100789159522664568",
+   "https://www.reddit.com/r/openclaw/comments/1rcuk6y/agi_is_here_any_automating_me_life_i_cant_get_my/o70zvh2/"
+  ]
+ },
+ {
+  "site": "figma.com",
+  "category": "saas",
+  "reports": 4,
+  "good": 0,
+  "mixed": 0,
+  "bad": 4,
+  "score": 21,
+  "platforms": {
+   "reddit": 4
+  },
+  "top_friction": [
+   "new:mcp-low-coverage",
+   "new:oauth-browser-flow",
+   "new:mcp-token-bloat",
+   "rate-limit"
+  ],
+  "top_enablers": [
+   "mcp-server"
+  ],
+  "agents": [
+   "cursor",
+   "unknown"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/cursor/comments/1pu5109/the_best_mcp_servers_that_actually_can_change_how/nvnkzyb/",
+   "https://www.reddit.com/r/webdev/comments/1vp1wi2/figma_mcp_accuracy_token_consumption/",
+   "https://www.reddit.com/r/cursor/comments/1qa5gmg/on_fedora_43_figma_mcp_oauth_callback_creates/",
+   "https://www.reddit.com/r/mcp/comments/1rfhgd0/7_mcps_that_genuinely_made_me_quicker/o8xrvxf/"
+  ]
+ },
+ {
+  "site": "gmail.com",
+  "category": "saas",
+  "reports": 4,
+  "good": 1,
+  "mixed": 1,
+  "bad": 2,
+  "score": 39,
+  "platforms": {
+   "reddit": 4
+  },
+  "top_friction": [
+   "account-ban",
+   "human-verification",
+   "login-wall",
+   "auth-email-otp"
+  ],
+  "top_enablers": [
+   "cli"
+  ],
+  "agents": [
+   "chatgpt-agent",
+   "custom",
+   "openclaw",
+   "claude-code"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/ChatGPT/comments/1udikzt/i_gave_my_chatgpt_agent_two_inboxes_for_5_days_to/",
+   "https://www.reddit.com/r/openclaw/comments/1rbm904/gmail_banned_my_agents_account_after_48_hours/",
+   "https://www.reddit.com/r/openclaw/comments/1rh0mbl/gmail_blocked_for_bot_usage/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1s0u2ms/mcp_servers_i_use_every_single_day_whats_in_your/obxo83a/"
+  ]
+ },
+ {
+  "site": "linear.app",
+  "category": "saas",
+  "reports": 4,
+  "good": 4,
+  "mixed": 0,
+  "bad": 0,
+  "score": 79,
+  "platforms": {
+   "reddit": 4
+  },
+  "top_friction": [],
+  "top_enablers": [
+   "mcp-server",
+   "public-api",
+   "webhooks",
+   "skill-or-plugin"
+  ],
+  "agents": [
+   "claude-code",
+   "claude-cowork"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/Linear/comments/1s4gqdy/linearnative_ai_dev_agent_using_claude_code_mcp/",
+   "https://www.reddit.com/r/Linear/comments/1rvfyp2/i_connected_claude_cowork_to_linear_and_it/",
+   "https://www.reddit.com/r/Linear/comments/1s00mrf/using_claude_mobile_linear_to_brainstorm_features/",
+   "https://www.reddit.com/r/ClaudeAI/comments/1vh0yd3/top_15_mcp_servers_that_are_actually_useful_in/p21n45y/"
+  ]
+ },
+ {
+  "site": "ticketmaster.com",
+  "category": "ticketing",
+  "reports": 4,
+  "good": 0,
+  "mixed": 0,
+  "bad": 4,
+  "score": 21,
+  "platforms": {
+   "reddit": 3,
+   "x": 1
+  },
+  "top_friction": [
+   "dynamic-ui",
+   "captcha",
+   "hallucinated-success",
+   "popups-modals"
+  ],
+  "top_enablers": [],
+  "agents": [
+   "agent-browser",
+   "custom",
+   "alexa-plus",
+   "muse+instinct"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/AI_Agents/comments/1vnydav/my_agent_spent_40_minutes_on_a_task_that_takes_me/",
+   "https://www.reddit.com/r/alexa/comments/1w5vunu/alexa_bought_concert_tickets_without_my_permission/",
+   "https://www.reddit.com/r/AI_Agents/comments/1vnydav/my_agent_spent_40_minutes_on_a_task_that_takes_me/p7cootj/",
+   "https://x.com/ibaklanov/status/2101697264876195892"
+  ]
+ },
+ {
+  "site": "uber.com",
+  "category": "travel",
+  "reports": 4,
+  "good": 0,
+  "mixed": 1,
+  "bad": 3,
+  "score": 28,
+  "platforms": {
+   "reddit": 4
+  },
+  "top_friction": [
+   "session-expiry",
+   "login-wall",
+   "bot-block",
+   "captcha"
+  ],
+  "top_enablers": [],
+  "agents": [
+   "openclaw",
+   "operator"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/openclaw/comments/1rsxraf/anyone_struggling_with_openclaw_browser/",
+   "https://www.reddit.com/r/openclaw/comments/1rx218m/update_got_ai_agents_to_successfully_book/",
+   "https://www.reddit.com/r/OpenAI/comments/1i8ki8o/the_new_operator_mode_is_such_an_embarrassing/m8u9vp8/",
+   "https://www.reddit.com/r/OpenAI/comments/1i8ki8o/the_new_operator_mode_is_such_an_embarrassing/m8ugejh/"
+  ]
+ },
+ {
+  "site": "ubereats.com",
+  "category": "food-delivery",
+  "reports": 4,
+  "good": 2,
+  "mixed": 0,
+  "bad": 2,
+  "score": 50,
+  "platforms": {
+   "x": 4
+  },
+  "top_friction": [
+   "captcha",
+   "new:auth-otp-unspecified",
+   "login-wall",
+   "new:auth-verification-code"
+  ],
+  "top_enablers": [
+   "new:login-link-to-user-email",
+   "new:email-link-account-connect"
+  ],
+  "agents": [
+   "instinct",
+   "muse"
+  ],
+  "sources": [
+   "https://x.com/chandnirao_here/status/2101146288008147374",
+   "https://x.com/chandnirao_here/status/2101146288008147374",
+   "https://x.com/chandnirao_here/status/2101146127739277690",
+   "https://x.com/chandnirao_here/status/2101146127739277690"
+  ]
+ },
+ {
+  "site": "xfinity.com",
+  "category": "other",
+  "reports": 4,
+  "good": 0,
+  "mixed": 1,
+  "bad": 3,
+  "score": 33,
+  "platforms": {
+   "reddit": 1,
+   "x": 3
+  },
+  "top_friction": [
+   "bot-block",
+   "rate-limit",
+   "session-expiry",
+   "human-verification"
+  ],
+  "top_enablers": [],
+  "agents": [
+   "muse",
+   "comet",
+   "muse+instinct"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/PerplexityComet/comments/1oz2d9s/just_had_my_xfinity_bill_reduced_from_51_to_41/",
+   "https://x.com/neilcybart/status/2101238558568669607",
+   "https://x.com/chintu30/status/2100760653128687819",
+   "https://x.com/chum94555/status/2101805437771186225"
+  ]
+ },
+ {
+  "site": "accounts.google.com",
+  "category": "saas",
+  "reports": 3,
+  "good": 0,
+  "mixed": 0,
+  "bad": 3,
+  "score": 25,
+  "platforms": {
+   "reddit": 3
+  },
+  "top_friction": [
+   "login-wall",
+   "bot-block",
+   "new:oauth-browser-flow"
+  ],
+  "top_enablers": [],
+  "agents": [
+   "chatgpt-agent",
+   "claude-code",
+   "cursor"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/ClaudeAI/comments/1m9onh6/for_those_who_use_claude_code_puppeteer_mcp_how/",
+   "https://www.reddit.com/r/OpenAI/comments/1majcf4/what_are_some_good_use_cases_of_agent_mode_that/n5j5yw8/",
+   "https://www.reddit.com/r/cursor/comments/1px9gjn/cursor_redirect_with_browser/"
+  ]
+ },
+ {
+  "site": "bestbuy.com",
+  "category": "retail",
+  "reports": 3,
+  "good": 1,
+  "mixed": 0,
+  "bad": 2,
+  "score": 37,
+  "platforms": {
+   "x": 3
+  },
+  "top_friction": [
+   "bot-block"
+  ],
+  "top_enablers": [],
+  "agents": [
+   "muse",
+   "grok-bot"
+  ],
+  "sources": [
+   "https://x.com/cj_streetpoet/status/2101830169119863201",
+   "https://x.com/AswinDigital/status/2101233338556248479",
+   "https://x.com/AswinDigital/status/2101233515715236092"
+  ]
+ },
+ {
+  "site": "canva.com",
+  "category": "saas",
+  "reports": 3,
+  "good": 0,
+  "mixed": 1,
+  "bad": 2,
+  "score": 32,
+  "platforms": {
+   "reddit": 3
+  },
+  "top_friction": [
+   "bot-block",
+   "captcha"
+  ],
+  "top_enablers": [],
+  "agents": [
+   "chatgpt-agent"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/ChatGPTPro/comments/1mdaru1/canva_blocked_by_cloudflare_when_using_chatgpt/",
+   "https://www.reddit.com/r/ChatGPTPro/comments/1mdaru1/canva_blocked_by_cloudflare_when_using_chatgpt/n612jql/",
+   "https://www.reddit.com/r/OpenAI/comments/1mce797/agent_mode_kind_of_useless/n5z3cmi/"
+  ]
+ },
+ {
+  "site": "notion.so",
+  "category": "saas",
+  "reports": 3,
+  "good": 0,
+  "mixed": 2,
+  "bad": 1,
+  "score": 45,
+  "platforms": {
+   "reddit": 3
+  },
+  "top_friction": [
+   "new:oauth-browser-flow",
+   "new:mcp-low-coverage",
+   "new:mcp-token-bloat"
+  ],
+  "top_enablers": [
+   "mcp-server"
+  ],
+  "agents": [
+   "claude-code",
+   "unknown",
+   "cursor"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/mcp/comments/1o0isd5/the_11_most_useful_mcp_servers_after_browsing/nibbn6g/",
+   "https://www.reddit.com/r/cursor/comments/1pu5109/the_best_mcp_servers_that_actually_can_change_how/nvx0hn8/",
+   "https://www.reddit.com/r/ClaudeCode/comments/1sems01/mcp_vs_cli_is_like_debating_cash_vs_card_depends/oesij5x/"
+  ]
+ },
+ {
+  "site": "target.com",
+  "category": "retail",
+  "reports": 3,
+  "good": 1,
+  "mixed": 2,
+  "bad": 0,
+  "score": 61,
+  "platforms": {
+   "reddit": 2,
+   "x": 1
+  },
+  "top_friction": [
+   "bot-block",
+   "captcha"
+  ],
+  "top_enablers": [
+   "new:human-handoff"
+  ],
+  "agents": [
+   "chatgpt-agent",
+   "grok-bot"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/OpenAI/comments/1majcf4/what_are_some_good_use_cases_of_agent_mode_that/n5i1xyq/",
+   "https://x.com/pupsierra/status/2099332726847582686",
+   "https://www.reddit.com/r/ChatGPT/comments/1ma0wub/is_amazon_blocking_chatgpt_agents_any_workarounds/n6xky9t/"
+  ]
+ },
+ {
+  "site": "united.com",
+  "category": "airline",
+  "reports": 3,
+  "good": 0,
+  "mixed": 0,
+  "bad": 3,
+  "score": 25,
+  "platforms": {
+   "x": 3
+  },
+  "top_friction": [
+   "bot-block"
+  ],
+  "top_enablers": [],
+  "agents": [
+   "muse+instinct",
+   "muse"
+  ],
+  "sources": [
+   "https://x.com/RiffTheNews/status/2101828299668292033",
+   "https://x.com/jalohann/status/2101819973396242639",
+   "https://x.com/hawkinbj/status/2101695469231743309"
+  ]
+ },
+ {
+  "site": "webflow.com",
+  "category": "saas",
+  "reports": 3,
+  "good": 1,
+  "mixed": 2,
+  "bad": 0,
+  "score": 61,
+  "platforms": {
+   "reddit": 1,
+   "x": 2
+  },
+  "top_friction": [
+   "slow-or-timeout",
+   "new:mcp-limited-scope"
+  ],
+  "top_enablers": [
+   "mcp-server"
+  ],
+  "agents": [
+   "unknown",
+   "claude-cowork",
+   "claude"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/mcp/comments/1qlhj62/a_few_of_the_mcps_i_use_on_a_daily_basis/o1ekv6n/",
+   "https://x.com/AdamTahir_1/status/2101774681770754078",
+   "https://x.com/AdamTahir_1/status/2101757028838633730"
+  ]
+ },
+ {
+  "site": "x402.org",
+  "category": "payments",
+  "reports": 3,
+  "good": 0,
+  "mixed": 3,
+  "bad": 0,
+  "score": 50,
+  "platforms": {
+   "reddit": 3
+  },
+  "top_friction": [
+   "new:no-agent-spend-limits",
+   "error-messages-unclear",
+   "new:paid-endpoint-unreliable"
+  ],
+  "top_enablers": [
+   "agent-payments",
+   "public-api",
+   "sandbox-mode",
+   "mcp-server"
+  ],
+  "agents": [
+   "custom"
+  ],
+  "sources": [
+   "https://www.reddit.com/r/AI_Agents/comments/1uxo2zm/i_built_payment_infrastructure_for_ai_agents_to/",
+   "https://www.reddit.com/r/AI_Agents/comments/1vu91d7/before_your_agent_pays_an_x402_endpoint_ask_it/",
+   "https://www.reddit.com/r/fintech/comments/1sfup4i/the_missing_layer_in_agentic_payments_is_not_the/oi9v97o/"
+  ]
+ }
+]

@@ -1,0 +1,132 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import wallData from '../../data/wall.json';
+import { countPattern, type WallItem } from '@lib/wall';
+
+const items = wallData as unknown as WallItem[];
+const today = new Date().toISOString().slice(0, 10);
+const all = (await getCollection('patterns')).sort((a, b) => a.data.order - b.data.order);
+const groups = [
+  { kind: 'anti', title: 'Stops agents', mark: '✕', list: all.filter((p) => p.data.kind === 'anti') },
+  { kind: 'good', title: 'Lets them through', mark: '✓', list: all.filter((p) => p.data.kind === 'good') },
+] as const;
+const wallHref = (kind: string, tag: string) => `/wall?pattern=${encodeURIComponent(`${kind}:${tag}`)}`;
+---
+
+<BaseLayout title="Patterns | agentexperience.design" description="What stops AI agents on websites, and what lets them through.">
+  <div class="patterns">
+    <div class="container">
+      <h1>Patterns</h1>
+
+      {groups.map((g) => (
+        <section>
+          <h2><span class={`m m--${g.kind}`} aria-hidden="true">{g.mark}</span>{g.title}</h2>
+          <ol class="list">
+            {g.list.map((p) => {
+              const n = countPattern(items, g.kind, p.data.wallTag, today);
+              return (
+                <li class="item">
+                  <a href={`/patterns/${p.slug}`} class="item__title">{p.data.title}</a>
+                  {n > 0 && <a href={wallHref(g.kind, p.data.wallTag)} class="item__n" title="Posts in the last 30 days">{n}</a>}
+                  <span class="item__summary">{p.data.summary}</span>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .patterns {
+    padding-block: var(--space-8) var(--space-16);
+  }
+
+  h1 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-8);
+  }
+
+  section + section {
+    margin-top: var(--space-10);
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-xl);
+    padding-bottom: var(--space-2);
+    border-bottom: 2px solid var(--color-text);
+  }
+
+  .m {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    font-size: var(--text-xs);
+    font-weight: 700;
+  }
+
+  .m--anti {
+    color: var(--color-bad);
+    background: var(--color-bad-bg);
+  }
+
+  .m--good {
+    color: var(--color-good);
+    background: var(--color-good-bg);
+  }
+
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-1) var(--space-4);
+    padding-block: var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .item__title {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .item__title:hover,
+  .item__n:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .item a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  .item__n {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+    padding-top: 4px;
+    text-decoration: none;
+  }
+
+  .item__summary {
+    grid-column: 1 / -1;
+    color: var(--color-text-muted);
+    line-height: var(--line-normal);
+  }
+</style>
